@@ -1,12 +1,17 @@
 import Link from 'next/link'
+import Image from 'next/image'
+
 
 export default function Header() {
   return (
     <header className="header">
           {/* Logo */}
           <Link href='/'>
+            <a><div className='site-logo'></div></a>
+          </Link>
+          <Link href='/'>
             <a className="logo">
-              <h2>WarBlog</h2>
+              <h2>Be Brave UA</h2>
             </a>
           </Link>
 
@@ -17,9 +22,10 @@ export default function Header() {
           {/* Menu */}
           <nav className="nav">
               <ul className="menu">
-                  <li><a href="#">Gallery</a></li>
-                  <li><a href="#">Blog</a> </li>
-                  <li><a href="#">About</a></li>
+                  <li><a href="#">Блог</a></li>
+                  <li><a href="#">Такмед</a> </li>
+                  <li><a href="#">Психологія</a></li>
+                  <li><a href="#">Бібліотека</a></li>
               </ul>
           </nav>
       </header>

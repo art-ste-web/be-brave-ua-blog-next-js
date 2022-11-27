@@ -14,11 +14,12 @@ export default function Post({post}) {
         />
 
         <div className="post-date">{post.frontmatter.date.split('-').reverse().join('.')}</div>
-
-        <h3>{post.frontmatter.title}</h3>
-
-        <p>{post.frontmatter.excerpt}</p>
-
+        <Link href={`/blog/${post.slug}`}>
+          <h3>{post.frontmatter.title}</h3>
+        </Link>
+        <Link href={`/blog/${post.slug}`}>
+          <p>{post.frontmatter.excerpt}</p>
+        </Link>
         <div>{
                   post.frontmatter.tags.map(
                     (tag, index) => {

@@ -2,8 +2,37 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Head from 'next/head'
-import Post from '../components/Post'
+import Category from '../components/CategoryCard'
+import DeadRusStats from '../components/DeadRusStats'
 import { sortByDate } from '../utils'
+
+const categoryData = [
+  {
+    cardTitle: 'Військовий блог',
+    cardDesc: 'Досвід бійців, практичні поради',
+    cardBg: '/images/categories/blog.jpg',
+    cardLink: '/blog'
+  },
+  {
+    cardTitle: 'Тактична медицина',
+    cardDesc: 'Базові знання з тактичної медицини',
+    cardBg: '/images/categories/takmed.jpg',
+    cardLink: '/takmed'
+  },
+  {
+    cardTitle: 'Психологічна допомога',
+    cardDesc: 'Поради психологів, контакти допомоги',
+    cardBg: '/images/categories/psy.jpg',
+    cardLink: '/psyhologiya'
+  },
+  {
+    cardTitle: 'Військова бібліотека',
+    cardDesc: 'Методичні рекомендації, книги',
+    cardBg: '/images/categories/lib.jpg',
+    cardLink: '/biblioteka'
+  },
+]
+
 
 export default function Home({ posts }) {
   //console.log(posts)
@@ -16,10 +45,11 @@ export default function Home({ posts }) {
       </Head>
 
       <div className='posts'>
-        {posts.map((post, index) => (
-          <Post key={index} post={post} />
+        {categoryData.map((category, index) => (
+          <Category key={index} category={category} />
         ))}
       </div>
+       <DeadRusStats />   
     </div>
   )
 }

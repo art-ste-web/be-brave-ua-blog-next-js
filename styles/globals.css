@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Raleway&display=swap');
 
 
-:root {
+/* :root {
   --background: white;
   --text-primary: black;
   --text-secondary: royalblue;
@@ -12,7 +12,7 @@
   --text-primary: white;
   --text-secondary: grey;
   --accent: darkred;
-}
+} */
 
 
 * {
@@ -23,9 +23,11 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  min-width: 360px;
 }
 
 p {
+  font-family: 'Raleway', sans-serif;
   margin: 15px 0;
   line-height: 1.8;
 }
@@ -45,9 +47,18 @@ img {
 
 
 :root{
+  --olive-green: #3D5736;
+  --olive-green-s-t: #3d5736d8;
+  --text-white: #f2f2f2;
   --white: #f9f9f9;
-  --black: #36383F;
+  --nav-bg:  #36383F;
+  --dark-black: #1E1E1E;
   --grey: #85888C;
+  --light-grey: #a5a7af;
+  --yellow: #F7C600;
+
+  --card-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  --inner-shadow: inset 1000px 1000px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -55,21 +66,43 @@ img {
 /* Header */
 .header{
   
-  background-color: var(--black);
+  min-height: 3rem;
+  background-color: var(--nav-bg);
   box-shadow: 1px 1px 5px 0px var(--grey);
   position: sticky;
   top: 0;
   right: 0;
   left: 0;
   width: 100%;
+  z-index: 400;
+}
+
+.site-logo {
+  height: 60px;
+  width: 50px;
+  background-image: url('/images/afu-logo.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: .5rem;
+  left: 1rem;
+  z-index: 500;
+  overflow: visible;
+  
 }
 
 /* Logo */
 .logo{
   display: inline-block;
   color: var(--white);
-  font-size: 2rem;
-  margin-left: 10px;
+  font-size: .8rem;
+ 
+}
+
+.logo h2 {
+  padding: 1rem;
+  margin-left: 4rem;
 
 }
 
@@ -78,11 +111,16 @@ img {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: var(--black);
+  top: 3rem;
+  background-color: var(--nav-bg);
   overflow: hidden;
   
 }
 
+.menu {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
 .menu a{
   display: block;
   padding: 0.5rem;
@@ -104,7 +142,7 @@ img {
 .hamb{
   cursor: pointer;
   float: right;
-  padding: 30px 20px;
+  padding: 1.6rem;
 }
 
 
@@ -129,11 +167,11 @@ img {
 }
 
 .hamb-line::before{
-  top: 5px;
+  top: 8px;
 }
 
 .hamb-line::after{
-  top: -5px;
+  top: -8px;
 }
 
 
@@ -181,7 +219,10 @@ img {
       background-color: transparent;
 
   }
-
+  .menu {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
   .menu li{
       float: left;
   }
@@ -199,22 +240,6 @@ img {
 }
 
 
-
-
-
-
-
-/* header {
-  background: #5f6729;
-  color: #fff;
-  padding: 5px;
-  margin-bottom: 40px;
-}
-
-header a {
-  color: #fff;
-} */
-
 .container {
   max-width: 768px;
   margin: auto;
@@ -222,27 +247,138 @@ header a {
   padding: 0 10px;
 }
 
-.btn {
-  display: inline-block;
-  background: steelblue;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: inherit;
+/*category card*/
+
+.cat-card {
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: .5rem;
+  box-shadow: var(--inner-shadow), var(--card-shadow);
+  padding: 2rem 1rem;
 }
 
-.btn:focus {
+.cat-card h2 {
+  color: var(--text-white);
+  padding: .5rem;
+  background-color: var(--olive-green-s-t);
+}
+
+.cat-card p {
+  line-height: 1;
+  padding: .2rem;
+  color: var(--text-white);
+  background-color: var(--dark-black);
+}
+
+.card-btn {
+  display: inline-block;
+  background: var(--yellow);
+  color: var(--dark-black);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: .9rem;
+  font-family: 'Raleway', sans-serif;
+  transition: all .25s;
+}
+
+.card-btn:focus {
   outline: none;
 }
 
-.btn:hover {
-  transform: scale(0.98);
+.card-btn:hover {
+  transform: scale(1.1);
+  transition: all .25s;
 }
 
+/*dead rus stats*/
+.deadRusStats {
+  font-family: 'Raleway', sans-serif;
+  color: var(--dark-black);
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, .1); */
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 1rem 0;
+  border-top: 1px solid #eaeaea;
+}
+
+.deadRusStats .deadRusHeader {
+  
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.deadRusStats .warDay {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--yellow);
+  /* background: linear-gradient(0deg, rgba(255,232,12,1) 0%, rgba(251,244,0,1) 49%, rgb(84, 158, 255) 50%, rgb(75, 156, 248) 100%); */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.deadRusStats .statsRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.deadRusStats .statsItem {
+  margin: 0 .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8rem;
+  min-width: 33%;
+}
+
+.deadRusStats .statsItem .statIcon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--light-grey);
+  padding: .25rem;
+  border-radius: 50%;
+}
+
+.deadRusStats .nums {
+  margin-left: .5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--olive-green);
+}
+
+.deadRusStats .dayIncr {
+  color: var(--nav-bg);
+  font-size: .8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .statsItem {
+      font-size: 1rem;
+  }
+}
+
+/*dark*/
+.img__dark {
+  filter: invert(80%);
+}
+
+.deadRusStats__dark {
+  color: var(--text-on-dark) !important;
+}
+
+/*blog*/
 .btn-back {
   background: #f4f4f4;
   color: #000;
@@ -303,3 +439,46 @@ ol {
     grid-template-columns: 1fr;
   }
 }
+
+/*footer*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 2rem 0;
+  margin: 0 auto;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  max-width: 640px;
+}
+
+.infoBtn {
+  cursor: pointer;
+}
+
+.infoTxt {
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(255, 255, 255, .6);
+  padding: 0 1rem;
+  margin: 0.5rem 0 0 0;
+  border-radius: 3px;
+  font-size: .9rem;
+  line-height: 1.1;
+  opacity: 0;
+  transition: opacity  .3s;
+  transition-delay: .2s;
+  transition-property: height;
+  height: 0;
+  overflow: hidden;
+}
+
+.infoTxt__open {
+  opacity: 1;
+  transition: opacity  .3s;
+  transition-delay: .2s;
+  transition-property: opacity;
+  height: auto;
+}
+
+
