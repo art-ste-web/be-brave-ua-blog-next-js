@@ -1,0 +1,38 @@
+{
+    "books": [
+                {
+                    "category": "зброя",
+                    "link": "/books/zbroya/Nastanova-AK-74.pdf",
+                    "icon": "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",
+                    "title": "Настанова зі стрілецької справи AK, РПК (5,45)",
+                    "description": "Настанова, призначена для підготовки особового складу Збройних Сил України, який має на озброєнні 5,45-мм автомати Калашнікова та 5,45-мм ручні кулемети Калашнікова.",
+                    "fileType": "Тип: PDF файл",
+                    "size": "~10 Mb",
+                    "date": "Рік: 2005",
+                    "tag": ["стрілецька зброя", "настанови"]
+                },
+                {
+                    "category": "зброя",
+                    "link": "/books/zbroya/Nastanova-SVD.pdf",
+                    "icon": "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",
+                    "title": "Настанова зі стрілецької справи СГД",
+                    "description": "Настанова призначена для підготовки особового складу Збройних Сил України, який має на озброєнні 7,62-мм снайперську гвинтівку Драгунова (СГД).",
+                    "fileType": "Тип: PDF файл",
+                    "size": "~6.5 Mb",
+                    "date": "Рік: 2006",
+                    "tag": ["стрілецька зброя", "настанови"]
+                },
+                {
+                    "category": "зброя",
+                    "link": "/books/zbroya/Nastanova-RPG-7.pdf",
+                    "icon": "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",
+                    "title": "Настанова зі стрілецької справи РПГ-7",
+                    "description": "У дійсній настанові описана будова РПГ – 7 та його модифікацій (РПГ – 7Д, РПГ – 7В), які знаходяться на озброєнні у Збройних Силах України.",
+                    "fileType": "Тип: PDF файл",
+                    "size": "~2.5 Mb",
+                    "date": "Рік: 2004",
+                    "tag": ["гранатомети", "настанови"]
+                }
+    
+    ]
+}

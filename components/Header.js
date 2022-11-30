@@ -22,10 +22,10 @@ export default function Header() {
           {/* Menu */}
           <nav className="nav">
               <ul className="menu">
-                  <li><a href="#">Блог</a></li>
-                  <li><a href="#">Такмед</a> </li>
+                  <li><a href="/blog">Блог</a></li>
+                  <li><a href="#">ТакМед</a> </li>
                   <li><a href="#">Психологія</a></li>
-                  <li><a href="#">Бібліотека</a></li>
+                  <li><a href="/biblioteka">Бібліотека</a></li>
               </ul>
           </nav>
       </header>
