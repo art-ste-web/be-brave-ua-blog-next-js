@@ -103,7 +103,16 @@ img {
 .logo h2 {
   padding: 1rem;
   margin-left: 4rem;
+  display: flex;
+  align-items: center;
 
+}
+
+.logo .flag {
+  margin-left: .2rem;
+}
+.logo .flag img {
+  border-radius: 0;
 }
 
 /* Nav menu */
@@ -122,6 +131,7 @@ img {
   margin-left: 1rem;
 }
 .menu a{
+  font-size: 1.2rem;
   display: block;
   padding: 0.5rem;
   color: var(--white);
@@ -223,8 +233,9 @@ img {
     margin-top: 0;
     margin-left: 1rem;
   }
-  .menu li{
+  .menu li {
       float: left;
+      font-size: 1rem;
   }
 
   .menu a:hover{

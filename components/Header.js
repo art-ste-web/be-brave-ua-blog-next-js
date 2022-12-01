@@ -11,7 +11,14 @@ export default function Header() {
           </Link>
           <Link href='/'>
             <a className="logo">
-              <h2>Be Brave UA</h2>
+              <h2>Be Brave UA <span className='flag'>
+                <Image
+                  src='/images/ukraine.png'
+                  alt="Picture of the author"
+                  width={20}
+                  height={20}
+                />
+              </span></h2>
             </a>
           </Link>
 
@@ -22,6 +29,7 @@ export default function Header() {
           {/* Menu */}
           <nav className="nav">
               <ul className="menu">
+                  <li><a href="/">Головна</a></li>
                   <li><a href="/blog">Блог</a></li>
                   <li><a href="#">ТакМед</a> </li>
                   <li><a href="#">Психологія</a></li>
