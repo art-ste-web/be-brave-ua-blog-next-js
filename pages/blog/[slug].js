@@ -3,19 +3,29 @@ import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
 import Link from 'next/link'
+import Image from 'next/image'
 import { slugify } from '../../utils'
 
 export default function PostPage({frontmatter: {title, date, cover_image, tags}, slug, content}) {
   return (
-    <>
-        <Link href='/blog'>
-            <a className='btn btn-back'>Go Back</a>
-        </Link>
-        <div className='card card-page'>
-            <h1 className='post-title'>{title}</h1>
-            <div className='post-date'>{date.split('-').reverse().join('.')}</div>
-            <img src={cover_image} alt='' />
-            <div>{
+    <>  
+      <div>
+          <Link href='/blog'>
+              <a className='btn-back'>
+                <Image
+                    src='/images/other-icons/menu-tiles.svg'
+                    alt="book-icon"
+                    width={32}
+                    height={32}
+                />
+                <span>Всі записи блогу</span>
+              </a>
+          </Link>
+        </div>
+        <div className='single-post'>
+            <h1 className='single-post-title'>{title}</h1>
+            <div className='single-post-date'>{date.split('-').reverse().join('.')}</div>
+            <div className='tags'>{
                   tags.map(
                     tag => {
 
@@ -23,16 +33,35 @@ export default function PostPage({frontmatter: {title, date, cover_image, tags},
                       const slug = tag
 
                       return (<Link key={tag} href={`/tag/${slug}`}>
-                        <a>
+                        <a className='post-tag'>
                           <span>#{tag}</span>
                         </a>
                       </Link>)
                     }
                   )
                 }
-          </div>
-            <div dangerouslySetInnerHTML={{__html: marked(content)}}></div>
+            </div>
+            <img src={cover_image} alt='' />
+            
+            <div className='post-body' dangerouslySetInnerHTML={{__html: marked(content)}}>
 
+                {/*---- md file content ---*/}
+
+            </div>
+
+        </div>
+        <div>
+          <Link href='/blog'>
+              <a className='btn-back'>
+                <Image
+                    src='/images/other-icons/menu-tiles.svg'
+                    alt="book-icon"
+                    width={32}
+                    height={32}
+                />
+                <span>Всі записи блогу</span>
+              </a>
+          </Link>
         </div>
     </>
   )

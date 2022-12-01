@@ -5,22 +5,17 @@ import Image from 'next/image'
 
 export default function Post({post}) {
   return (
-    <div className="card">
+    <div className="post-card">
         <Image
           src={post.frontmatter.cover_image}
-          alt="Picture of the author"
+          alt="post-image"
           width={500}
           height={300}
         />
 
         <div className="post-date">{post.frontmatter.date.split('-').reverse().join('.')}</div>
-        <Link href={`/blog/${post.slug}`}>
-          <h3>{post.frontmatter.title}</h3>
-        </Link>
-        <Link href={`/blog/${post.slug}`}>
-          <p>{post.frontmatter.excerpt}</p>
-        </Link>
-        <div>{
+
+        <div className="tags">{
                   post.frontmatter.tags.map(
                     (tag, index) => {
 
@@ -30,7 +25,7 @@ export default function Post({post}) {
 
                       return (
                         <Link key={index} href={`/tag/${slug}`}>
-                          <a>
+                          <a className="post-tag">
                             <span>#{tag}</span>
                           </a>
                         </Link>
@@ -39,9 +34,16 @@ export default function Post({post}) {
                   )
                 }
           </div>
+        <Link href={`/blog/${post.slug}`}>
+          <h2 className="post-title">{post.frontmatter.title}</h2>
+        </Link>
+        <Link href={`/blog/${post.slug}`}>
+          <p className="post-excerpt">{post.frontmatter.excerpt}</p>
+        </Link>
+        
 
         <Link href={`/blog/${post.slug}`}>
-            <a className="btn">Читати</a>
+            <a className="card-btn">Читати</a>
         </Link>
     </div>
   )

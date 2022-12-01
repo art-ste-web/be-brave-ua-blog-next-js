@@ -12,12 +12,13 @@ export default function Library({books}) {
         </Head>
   
         <div className='container'>
-          <h1>Військова бібліотека</h1>
-          {books.map((book, index) => (
-          <BookCard key={index} book={book} />
-        ))}
+          <h1 className='page-header'>Військова бібліотека</h1>
+          <div className='cards-grid'>
+            {books.map((book, index) => (
+              <BookCard key={index} book={book} />
+            ))}
+          </div>
         </div>
-        
       </div>
     )
   }

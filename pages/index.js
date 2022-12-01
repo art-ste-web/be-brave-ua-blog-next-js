@@ -44,7 +44,7 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className='posts'>
+      <div className='cards-grid'>
         {categoryData.map((category, index) => (
           <Category key={index} category={category} />
         ))}

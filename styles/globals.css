@@ -1,19 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Raleway&display=swap');
 
 
-/* :root {
-  --background: white;
-  --text-primary: black;
-  --text-secondary: royalblue;
-  --accent: purple;
-}
-[data-theme='dark'] {
-  --background: black;
-  --text-primary: white;
-  --text-secondary: grey;
-  --accent: darkred;
-} */
 
+/*---------------RESET------------------*/
 
 * {
   box-sizing: border-box;
@@ -45,7 +34,7 @@ img {
   border-radius: 10px;
 }
 
-
+/*---------------GLOBALS------------------*/
 :root{
   --olive-green: #3D5736;
   --olive-green-s-t: #3d5736d8;
@@ -55,10 +44,12 @@ img {
   --dark-black: #1E1E1E;
   --grey: #85888C;
   --light-grey: #a5a7af;
+  --white-grey: #e9e9e9;
   --yellow: #F7C600;
 
   --card-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
-  --inner-shadow: inset 1000px 1000px rgba(0, 0, 0, 0.5);
+  --inner-shadow: inset 1000px 1000px rgba(10, 10, 10, 0.3);
+  --header-font: 'Merriweather', serif;
 }
 
 
@@ -135,11 +126,12 @@ img {
   display: block;
   padding: 0.5rem;
   color: var(--white);
-
+  transition: all .2s;
 }
 
 .menu a:hover{
   background-color: var(--grey);
+  transition: all .2s;
 }
 
 .nav{
@@ -211,7 +203,7 @@ img {
 }
 
 
-/* Responsiveness */
+/*Nav responsiveness */
 
 @media (min-width: 768px) {
   .header {
@@ -235,12 +227,15 @@ img {
   }
   .menu li {
       float: left;
-      font-size: 1rem;
+      
   }
-
+  .menu li a {
+    font-size: 1rem;
+  }
   .menu a:hover{
       background-color: transparent;
       color: var(--grey);
+      transition: all .2s;
       
   }
   
@@ -250,13 +245,82 @@ img {
 
 }
 
+/*footer*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--nav-bg);
+  padding: 1rem 0;
+  margin: 1rem auto 0 auto;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  
+}
 
+.infoBtn {
+  cursor: pointer;
+}
+
+.infoTxt {
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(255, 255, 255, .6);
+  padding: 0 1rem;
+  margin: 0;
+  border-radius: 3px;
+  font-size: .9rem;
+  line-height: 1.1;
+  opacity: 0;
+  transition: opacity  .3s;
+  transition-delay: .2s;
+  transition-property: height;
+  height: 0;
+  overflow: hidden;
+  max-width: 640px; 
+}
+
+.infoTxt__open {
+  padding: 1rem;
+  color: var(--light-grey);
+  background-color: var(--nav-bg);
+  opacity: 1;
+  transition: opacity  .3s;
+  transition-delay: .2s;
+  transition-property: opacity;
+  height: auto;
+}
+
+/*pages globals*/
 .container {
   max-width: 768px;
   margin: auto;
   
   padding: 0 10px;
 }
+
+.page-header {
+  font-family: var(--header-font);
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  color: var(--dark-black);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+@media (max-width: 500px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*---------------MAIN PAGE------------------*/
 
 /*category card*/
 
@@ -277,12 +341,12 @@ img {
 .cat-card h2 {
   color: var(--text-white);
   padding: .5rem;
-  background-color: var(--olive-green-s-t);
+  background-color: var(--olive-green);
 }
 
 .cat-card p {
   line-height: 1;
-  padding: .2rem;
+  padding: .3rem;
   color: var(--text-white);
   background-color: var(--dark-black);
 }
@@ -292,11 +356,11 @@ img {
   background: var(--yellow);
   color: var(--dark-black);
   border: none;
-  padding: 8px 16px;
+  padding: .7rem 1.1rem;
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
-  font-size: .9rem;
+  font-size: 1rem;
   font-family: 'Raleway', sans-serif;
   transition: all .25s;
 }
@@ -311,6 +375,7 @@ img {
 }
 
 /*dead rus stats*/
+
 .deadRusStats {
   font-family: 'Raleway', sans-serif;
   color: var(--dark-black);
@@ -380,116 +445,204 @@ img {
   }
 }
 
-/*dark*/
-.img__dark {
-  filter: invert(80%);
-}
 
-.deadRusStats__dark {
-  color: var(--text-on-dark) !important;
-}
+/*---------------BLOG PAGE------------------*/
 
-/*blog*/
 .btn-back {
   background: #f4f4f4;
   color: #000;
   margin-bottom: 20px;
 }
 
-.posts {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 30px;
+
+/*post card*/
+.post-card {
+  padding: 1rem;
+  margin: 0 .5rem;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  background-color: #f5f5f5;
 }
 
-.card {
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.post-card img {
+  z-index: 1;
 }
 
-.card img {
-  z-index: -1;
+.post-card .post-date {
+  margin: .5rem 0;
+  color: var(--grey);
 }
 
-.card-page {
-  padding: 15px 30px;
+.post-card .post-title {
+  margin: .5rem 0;
+  font-size: 1.2rem;
+  font-family: 'Merriweather', serif;
+  color: var(--dark-black);
 }
 
-.post-title {
-  margin: 10px 0;
+
+.post-card .post-excerpt {
+  font-size: 1rem;
+  margin: 1rem 0;
+  line-height: 1.1;
+  color: var(--nav-bg);
 }
 
-.post-date {
-  background: #f4f4f4;
-  margin-bottom: 20px;
-  padding: 3px 10px;
+.post-card .tags {
+  margin-bottom: 1rem;
 }
 
-.post-body h1, h2, h3 {
+.post-card .post-tag {
+  background-color: var(--olive-green-s-t);
+  margin-right: .5rem;
+  color: var(--text-white);
+  font-size: .9rem;
+  padding: .25rem;
+  border-radius: 3px;
+}
+
+/*---------------SINGLE POST----------------*/
+
+/*back to blog btn*/
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  padding: .5rem;
+  border-radius: 4px;
+  transition: all .2s;
+}
+
+.btn-back:hover {
+  background-color: #e2e2e2;
+  transition: all .2s;
+}
+
+.btn-back img {
+  border-radius: 0;
+  
+}
+
+.btn-back span {
+  margin-left: 1rem;
+}
+
+/*single post content*/
+
+.single-post-title {
   font-family: 'Merriweather', serif;
 }
 
-.post-body ul,
-ol {
-  font-size: 110%;
-  line-height: 2.3;
-  margin: 10px 0;
+.single-post-date {
+  margin: .5rem 0;
+  color: var(--grey);
 }
 
-.post-body pre {
+.single-post .tags {
+  margin: 1rem 0;
+}
+
+.single-post .post-tag {
+  background-color: var(--olive-green-s-t);
+  margin-right: .5rem;
+  color: var(--text-white);
+  font-size: .9rem;
+  padding: .25rem;
+  border-radius: 3px;
+}
+
+.single-post .post-body h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+}
+
+.single-post .post-body {
+  padding: .25rem;
+}
+
+.single-post .post-body p {
+  font-size: 1.1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.single-post .post-body ul,
+ol {
+  padding-left: 1rem;
+  line-height: 2.3;
+  margin: .5rem 0;
+}
+
+.single-post .post-body pre {
   background: #f4f4f4;
   padding: 20px;
   margin: 20px 0;
   line-height: 2.3;
 }
 
-@media (max-width: 500px) {
-  .posts {
-    grid-template-columns: 1fr;
-  }
-}
+/*---------------LiBRARY PAGE------------------*/
 
-/*footer*/
-.footer {
+/*book card*/
+
+.book-card {
   display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 2rem 0;
-  margin: 0 auto;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-  max-width: 640px;
+  padding: .8rem;
+  background-color: var(--white-grey);
+  color: var(--dark-black);
+  box-shadow: var(--card-shadow);
+  border-radius: 8px;
 }
 
-.infoBtn {
+.book-card .card-icon {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.book-meta .book-title {
+  font-family: 'Merriweather', serif;
+}
+
+.book-meta p {
+  margin: .5rem 0;
+  line-height: 1;
+}
+
+.book-meta .book-desc {
+  font-size: .9rem;
+  line-height: 1.1;
+ 
+}
+
+.book-meta .doc-type {
+  color: var(--grey);
+  font-size: .8rem;
+  
+}
+
+.book-meta .book-date {
+  color: var(--nav-bg);
+  margin: 0;
+  font-size: .9rem;
+}
+
+.book-meta .dwld-book-btn {
+  display: flex;
+  align-items: center;
+  background-color: var(--nav-bg);
+  color: var(--text-white);
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: .5rem;
+  margin: 1rem 0 0 0;
   cursor: pointer;
 }
 
-.infoTxt {
-  font-family: 'Raleway', sans-serif;
-  background-color: rgba(255, 255, 255, .6);
-  padding: 0 1rem;
-  margin: 0.5rem 0 0 0;
-  border-radius: 3px;
-  font-size: .9rem;
-  line-height: 1.1;
-  opacity: 0;
-  transition: opacity  .3s;
-  transition-delay: .2s;
-  transition-property: height;
-  height: 0;
-  overflow: hidden;
+.book-meta .dwld-book-btn img {
+  border-radius: 0;
 }
 
-.infoTxt__open {
-  opacity: 1;
-  transition: opacity  .3s;
-  transition-delay: .2s;
-  transition-property: opacity;
-  height: auto;
+.book-meta .dwld-book-btn span {
+  margin-left: .5rem;
 }
-
-
