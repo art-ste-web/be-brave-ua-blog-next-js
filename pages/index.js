@@ -23,7 +23,7 @@ const categoryData = [
     cardTitle: 'Психологічна допомога',
     cardDesc: 'Поради психологів, контакти допомоги',
     cardBg: '/images/categories/psy.jpg',
-    cardLink: '/psyhologiya'
+    cardLink: '/psyholog'
   },
   {
     cardTitle: 'Військова бібліотека',

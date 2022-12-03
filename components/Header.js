@@ -31,8 +31,8 @@ export default function Header() {
               <ul className="menu">
                   <li><Link href='/'>Головна</Link></li>
                   <li><Link href="/blog">Блог</Link></li>
-                  <li><Link href="#">ТакМед</Link> </li>
-                  <li><Link href="#">Психологія</Link></li>
+                  <li><Link href="/takmed">Тактична медицина</Link> </li>
+                  <li><Link href="/psyholog">Психологічна допомога</Link></li>
                   <li><Link href="/biblioteka">Бібліотека</Link></li>
               </ul>
           </nav>

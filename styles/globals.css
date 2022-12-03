@@ -38,6 +38,11 @@ h1, h2, h3, h4 {
   font-family: 'Merriweather', serif;
 }
 
+.temp-text {
+  min-height: 50vh;
+
+}
+
 /*---------------GLOBALS------------------*/
 :root{
   --olive-green: #3D5736;
