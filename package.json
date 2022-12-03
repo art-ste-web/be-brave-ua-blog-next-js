@@ -9,7 +9,7 @@
     "lint": "next lint",
     "json-server": "json-server --watch db.json --port 5000",
     "next-dev": "concurrently \"npm run dev\" \"npm run json-server\"",
-    "next-build": "json-server && build"
+    "next-build": "npm run json-server && next build"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
