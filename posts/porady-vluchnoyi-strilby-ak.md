@@ -2,10 +2,10 @@
 title: 'Сім порад для влучної стрільби із АК'
 excerpt: 'Поради інструкторів для влучної стрільби з АК'
 description : ""
-date: '04.11.22'
+date: '2022-11-04'
 cover_image: '/images/posts/zbroya/ak-girl.jpg'
 post_images : []
-tags: [стрільба, навички]
+tags: [зброя, корисні_навички]
 slug : "porady-vluchnoyi-strilby-ak"
 author : ""
 categories : ["навички"]
@@ -29,3 +29,7 @@ draft : false
 7. **Правильно користуйтеся прицільною планкою.** Цифри на ній означають відстань до цілі у метрах. «П» — це прямий постріл. Цю поділку використовують при стрільбі до цілі на 400 метрів.
  
 Джерело: [Сили територіальної оборони ЗСУ](https://www.facebook.com/100068672623504/posts/pfbid0jqSUgnz4bApuXEAfy9GMoxRZTDB7w4ML9B18ZbT2LVeRTfmJHSi5PuBBgv3xLnFzl/)
+
+### Матеріали по темі:
+
+- [Настанова зі стрільби АК-74](/biblioteka#0)

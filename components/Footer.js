@@ -12,7 +12,15 @@ function Footer(props) {
 
     return (
         <footer className="footer">
-            <div className="infoBtn" onClick={showTxt}>
+            
+              <ul className="footer-menu">
+                  <li><a href="/">Головна</a></li>
+                  <li><a href="/blog">Блог</a></li>
+                  <li><a href="#">ТакМед</a> </li>
+                  <li><a href="#">Психологія</a></li>
+                  <li><a href="/biblioteka">Бібліотека</a></li>
+              </ul>
+                      <div className="infoBtn" onClick={showTxt}>
                 <Image
                     src={'/images/other-icons/info-svgrepo-com.svg'}
                     alt=""

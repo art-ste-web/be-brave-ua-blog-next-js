@@ -1,6 +1,6 @@
 {
     "books": [
-                {
+                {   "id": "0",
                     "category": "зброя",
                     "link": "/books/zbroya/Nastanova-AK-74.pdf",
                     "icon": "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",
@@ -12,6 +12,7 @@
                     "tag": ["стрілецька зброя", "настанови"]
                 },
                 {
+                    "id": "1",
                     "category": "зброя",
                     "link": "/books/zbroya/Nastanova-SVD.pdf",
                     "icon": "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",
@@ -23,6 +24,7 @@
                     "tag": ["стрілецька зброя", "настанови"]
                 },
                 {
+                    "id": "2",
                     "category": "зброя",
                     "link": "/books/zbroya/Nastanova-RPG-7.pdf",
                     "icon": "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",

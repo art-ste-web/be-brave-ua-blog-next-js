@@ -34,6 +34,10 @@ img {
   border-radius: 10px;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Merriweather', serif;
+}
+
 /*---------------GLOBALS------------------*/
 :root{
   --olive-green: #3D5736;
@@ -243,6 +247,7 @@ img {
       display: none;
   }
 
+  
 }
 
 /*footer*/
@@ -257,6 +262,23 @@ img {
   justify-content: center;
   align-items: center;
   
+}
+
+
+.footer .footer-menu {
+  color: var(--light-grey);
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.footer .footer-menu li {
+  padding: .5rem;
+}
+
+.footer .footer-menu li a,
+.footer .footer-menu li a:visited {
+  color: var(--light-grey);
 }
 
 .infoBtn {
@@ -318,6 +340,13 @@ img {
   .cards-grid {
     grid-template-columns: 1fr;
   }
+  
+  .footer .footer-menu {
+      flex-direction: column;
+      align-self: flex-start;
+      margin-left: 2rem;
+  }
+  
 }
 
 /*---------------MAIN PAGE------------------*/
@@ -529,6 +558,9 @@ img {
 }
 
 /*single post content*/
+.single-post .post-img {
+  position: relative;
+}
 
 .single-post-title {
   font-family: 'Merriweather', serif;
@@ -552,8 +584,11 @@ img {
   border-radius: 3px;
 }
 
-.single-post .post-body h1, h2, h3 {
+.single-post .post-body h1,
+.single-post .post-body h2,
+.single-post .post-body h3 {
   font-family: 'Merriweather', serif;
+  margin-top: 2rem;
 }
 
 .single-post .post-body {
@@ -586,7 +621,7 @@ ol {
 
 .book-card {
   display: flex;
-  padding: .8rem;
+  padding: 1.5rem .8rem;
   background-color: var(--white-grey);
   color: var(--dark-black);
   box-shadow: var(--card-shadow);

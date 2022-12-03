@@ -5,7 +5,7 @@ export default function BookCard(props) {
     
   return (
     
-            <div className="book-card">
+            <div className="book-card" id={props.book.id}>
                 <div className="card-icon">
                     <Image
                             src={props.book.icon}

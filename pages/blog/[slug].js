@@ -41,7 +41,15 @@ export default function PostPage({frontmatter: {title, date, cover_image, tags},
                   )
                 }
             </div>
-            <img src={cover_image} alt='' />
+            <div className='post-img'>
+              <Image
+                      src={cover_image}
+                      alt="post-image"
+                      width={500}
+                      height={300}
+                      layout="responsive" 
+              />
+            </div>
             
             <div className='post-body' dangerouslySetInnerHTML={{__html: marked(content)}}>
 
