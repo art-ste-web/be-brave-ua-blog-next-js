@@ -4,24 +4,12 @@ import matter from 'gray-matter'
 import { marked } from 'marked'
 import Link from 'next/link'
 import Image from 'next/image'
-import { slugify } from '../../utils'
+import AllPostsBtn from '../../components/AllPostsBtn'
 
 export default function PostPage({frontmatter: {title, date, cover_image, tags}, slug, content}) {
   return (
     <>  
-      <div>
-          <Link href='/blog'>
-              <a className='btn-back'>
-                <Image
-                    src='/images/other-icons/menu-tiles.svg'
-                    alt="book-icon"
-                    width={32}
-                    height={32}
-                />
-                <span>Всі записи блогу</span>
-              </a>
-          </Link>
-        </div>
+        <AllPostsBtn />
         <div className='single-post'>
             <h1 className='single-post-title'>{title}</h1>
             <div className='single-post-date'>{date.split('-').reverse().join('.')}</div>
@@ -58,19 +46,7 @@ export default function PostPage({frontmatter: {title, date, cover_image, tags},
             </div>
 
         </div>
-        <div>
-          <Link href='/blog'>
-              <a className='btn-back'>
-                <Image
-                    src='/images/other-icons/menu-tiles.svg'
-                    alt="book-icon"
-                    width={32}
-                    height={32}
-                />
-                <span>Всі записи блогу</span>
-              </a>
-          </Link>
-        </div>
+        <AllPostsBtn />
     </>
   )
 }

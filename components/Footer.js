@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import Image from 'next/image'
+import Link from "next/link"
 
 
 function Footer(props) {
@@ -14,11 +15,11 @@ function Footer(props) {
         <footer className="footer">
             
               <ul className="footer-menu">
-                  <li><a href="/">Головна</a></li>
-                  <li><a href="/blog">Блог</a></li>
-                  <li><a href="#">ТакМед</a> </li>
-                  <li><a href="#">Психологія</a></li>
-                  <li><a href="/biblioteka">Бібліотека</a></li>
+                  <li><Link href='/'>Головна</Link></li>
+                  <li><Link href="/blog">Блог</Link></li>
+                  <li><Link href="#">ТакМед</Link> </li>
+                  <li><Link href="#">Психологія</Link></li>
+                  <li><Link href="/biblioteka">Бібліотека</Link></li>
               </ul>
                       <div className="infoBtn" onClick={showTxt}>
                 <Image

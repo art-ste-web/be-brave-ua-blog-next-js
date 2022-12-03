@@ -29,11 +29,11 @@ export default function Header() {
           {/* Menu */}
           <nav className="nav">
               <ul className="menu">
-                  <li><a href="/">Головна</a></li>
-                  <li><a href="/blog">Блог</a></li>
-                  <li><a href="#">ТакМед</a> </li>
-                  <li><a href="#">Психологія</a></li>
-                  <li><a href="/biblioteka">Бібліотека</a></li>
+                  <li><Link href='/'>Головна</Link></li>
+                  <li><Link href="/blog">Блог</Link></li>
+                  <li><Link href="#">ТакМед</Link> </li>
+                  <li><Link href="#">Психологія</Link></li>
+                  <li><Link href="/biblioteka">Бібліотека</Link></li>
               </ul>
           </nav>
       </header>
