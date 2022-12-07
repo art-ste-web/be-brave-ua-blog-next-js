@@ -614,6 +614,7 @@ h4, h5, h6 {
   font-size: 1.1rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
+  line-height: 1.4;
 }
 
 .single-post .post-body ul,
@@ -645,6 +646,7 @@ ol {
 
 .book-card .card-icon {
   margin: 1rem 1rem 1rem 0;
+  min-width: 3rem;
 }
 
 .book-meta .book-title {
