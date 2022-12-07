@@ -2,7 +2,7 @@
 title: 'Типи патронів 7,62х39'
 excerpt: 'Огляд типів боєприпасів 7,62х39'
 description : ""
-date: '2022-12-03'
+date: '2022-11-20'
 cover_image: '/images/posts/zbroya/ak-ammo.jpeg'
 tags: [зброя]
 slug : "typy-patroniv-ak-7-62"

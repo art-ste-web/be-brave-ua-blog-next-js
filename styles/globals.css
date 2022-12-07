@@ -38,6 +38,10 @@ h1, h2, h3, h4 {
   font-family: 'Merriweather', serif;
 }
 
+h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
 .temp-text {
   min-height: 50vh;
 
@@ -57,7 +61,7 @@ h1, h2, h3, h4 {
   --yellow: #F7C600;
 
   --card-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
-  --inner-shadow: inset 1000px 1000px rgba(10, 10, 10, 0.3);
+  --inner-shadow: inset 1000px 1000px rgba(10, 10, 10, 0.4);
   --header-font: 'Merriweather', serif;
 }
 
@@ -591,13 +595,19 @@ h1, h2, h3, h4 {
 
 .single-post .post-body h1,
 .single-post .post-body h2,
-.single-post .post-body h3 {
+.single-post .post-body h3,
+.single-post .post-body h4 {
   font-family: 'Merriweather', serif;
   margin-top: 2rem;
 }
 
 .single-post .post-body {
   padding: .25rem;
+}
+
+.single-post .post-body h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
 }
 
 .single-post .post-body p {
