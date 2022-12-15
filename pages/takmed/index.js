@@ -1,4 +1,5 @@
 import Head from "next/head"
+import CurrentPageHeader from "../../components/CurrentPageHeader"
 
 export default function TakMed() {
   return (
@@ -10,7 +11,9 @@ export default function TakMed() {
         </Head>
   
         <div className='container'>
-          <h1 className='page-header'>Тактична медицина</h1>
+
+          <CurrentPageHeader text='Тактична медицина' backLink='/' />
+
           <div className='cards-grid'>
 
           <p className="temp-text">В розробці...</p>

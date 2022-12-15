@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import BookCard from '../../components/BookCard';
+import CurrentPageHeader from '../../components/CurrentPageHeader'
+import BookCard from '../../components/BookCard'
 
 export default function Library({books}) {
     // console.log('props >>> ', books);
@@ -12,7 +13,9 @@ export default function Library({books}) {
         </Head>
   
         <div className='container'>
-          <h1 className='page-header'>Військова бібліотека</h1>
+
+        <CurrentPageHeader text='Військова бібліотека' backLink='/' />
+          
           <div className='cards-grid'>
             {books.map((book, index) => (
               <BookCard key={index} book={book} />
