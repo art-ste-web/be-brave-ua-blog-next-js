@@ -38,6 +38,10 @@ h1, h2, h3, h4 {
   font-family: 'Merriweather', serif;
 }
 
+h2 {
+  margin-top: 2rem;
+}
+
 h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
 }
@@ -58,11 +62,11 @@ h4, h5, h6 {
   --grey: #85888C;
   --light-grey: #a5a7af;
   --white-grey: #e9e9e9;
-  --light-grey-blue: '#ECF0F6';
+  --light-grey-blue: #ECF0F6;
   --yellow: #F7C600;
 
   --card-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
-  --inner-shadow: inset 1000px 1000px rgba(10, 10, 10, 0.4);
+  --inner-shadow: inset 1000px 1000px rgba(10, 10, 10, 0.3);
   --header-font: 'Merriweather', serif;
 }
 
@@ -105,8 +109,9 @@ h4, h5, h6 {
  
 }
 
-.logo h2 {
+.logo .logo-text {
   padding: 1rem;
+  margin-top: 0;
   margin-left: 4rem;
   display: flex;
   align-items: center;
@@ -167,7 +172,7 @@ h4, h5, h6 {
   display: block;
   height: 2px;
   position: relative;
-  width: 24px;
+  width: 22px;
   
 }
 
@@ -179,7 +184,7 @@ h4, h5, h6 {
   height: 100%;
   position: absolute;
   transition: all .2s ease-out;
-  width: 100%;
+  width: 120%;
 }
 
 .hamb-line::before{
@@ -337,11 +342,15 @@ h4, h5, h6 {
   font-family: var(--header-font);
   font-weight: 400;
   font-size: 1.6rem;
+  line-height: 1.1;
   margin: 2rem 0 1rem 0;
   color: var(--dark-black);
 }
+
 .page-header .back-btn {
   margin-right: .5rem;
+  cursor: pointer;
+  min-width: 3rem;
 }
 
 .cards-grid {
@@ -349,6 +358,10 @@ h4, h5, h6 {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin-top: 1rem;
+}
+
+.page-desc {
+  line-height: 1.3;
 }
 
 @media (max-width: 500px) {
@@ -380,6 +393,12 @@ h4, h5, h6 {
   border-radius: .5rem;
   box-shadow: var(--inner-shadow), var(--card-shadow);
   padding: 2rem 1rem;
+  transition: all .25s ease-in;
+}
+
+.cat-card:hover {
+  box-shadow: inset 1000px 1000px rgba(10, 10, 10, 0.6);
+  transition: all .25s ease-in;
 }
 
 .cat-card h2 {
@@ -641,7 +660,7 @@ ol {
 
 .sub-cat-card {
   display: flex;
-  background-color: #e4eaf8;
+  background-color: var(--light-grey-blue);
   padding: 1.4rem;
   border-radius: 8px;
   box-shadow: var(--card-shadow);
@@ -650,7 +669,7 @@ ol {
 }
 
 .sub-cat-card .card-icon {
-  min-width: 20%;
+  min-width: 18%;
   position: relative;
   margin: 0 1rem 0 0;
 }
@@ -661,7 +680,6 @@ ol {
 
 .sub-cat-card .card-desc {
   line-height: 1.2;
-  font-weight: 700;
   margin: .5rem 0;
 }
 
@@ -679,6 +697,53 @@ ol {
   font-family: 'Raleway', sans-serif;
   transition: all .25s;
   filter: drop-shadow(4px 4px 16px rgba(0, 0, 0, 0.1));
+}
+
+/*---------------PSYHOLOGY HELP PAGE----------------*/
+.hr-header {
+  font-size: 1.2rem;
+  margin: 2rem 0 1rem 0;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.help-contact-desc {
+  color: var(--grey);
+  line-height: 1.2;
+  font-family: 'Raleway', sans-serif;
+}
+
+.help-contact-link {
+  margin-top: 1rem;
+  font-size: .9rem;
+}
+.help-contact-link a,
+.help-contact-link a:visited {
+  color: var(--light-grey);
+  border-bottom: 2px solid var(--yellow);
+}
+
+.help-contact-btn {
+  display: flex;
+  align-items: center;
+  background-color: var(--light-grey-blue);
+  padding: .5rem .75rem;
+  margin: 1rem 0 0 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.help-contact-btn span {
+  margin-right: .5rem;
+  
+}
+
+.help-contact-notice {
+  font-size: .8rem;
+  color: var(--light-grey);
 }
 
 /*---------------LiBRARY PAGE------------------*/

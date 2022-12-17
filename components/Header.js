@@ -11,7 +11,7 @@ export default function Header() {
           </Link>
           <Link href='/'>
             <a className="logo">
-              <h2>Be Brave UA <span className='flag'>
+              <h2 className='logo-text'>Be Brave UA <span className='flag'>
                 <Image
                   src='/images/ukraine.png'
                   alt="Picture of the author"
