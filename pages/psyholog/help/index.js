@@ -12,7 +12,7 @@ export default function Help() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
   
-        <div className='container'>
+        <div className='container help-contacts'>
 
           <CurrentPageHeader text='Контакти психологічної допомоги' backLink='/psyholog'/>
           
@@ -106,6 +106,8 @@ export default function Help() {
           <small className="help-contact-notice">*Для кого працюють консультанти: ветерани, подружжя, діти та близькі ветеранів, родини та близькі військових, захисників і захисниць НГУ, МВС, ТрО, Державної прикордонної служби, ДСНС, медиків і добровольців</small>
           
           <h2>Контакти психологів-волонтерів:</h2>
+
+          <p className="temp-text">В розробці...</p>
 
         </div>
       </div>
