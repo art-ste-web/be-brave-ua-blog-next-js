@@ -75,7 +75,7 @@ export default function Help() {
 
           {/* Friend first aid bot */}
 
-          <h4 className="hr-header">Чат-бот Друг</h4>
+          <h4 className="hr-header">Чат-бот "Друг"</h4>
           <p className="help-contact-desc">
           Чат-бот першої психологічної допомоги. Розроблений за науково доведеними міжнародними протоколами.
           </p>

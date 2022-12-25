@@ -14,7 +14,11 @@ export default function Library({books}) {
   
         <div className='container'>
 
-        <CurrentPageHeader text='Військова бібліотека' backLink='/' />
+          <CurrentPageHeader 
+            text='Військова бібліотека' 
+            backLink='/'
+            desc='Навчальна література, настанови, офіційні документи'
+          />
           
           <div className='cards-grid'>
             {books.map((book, index) => (

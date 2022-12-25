@@ -16,7 +16,11 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <CurrentPageHeader text='Військовий блог' backLink='/' />
+      <CurrentPageHeader
+         text='Військовий блог' 
+         backLink='/' 
+         desc='Практичні поради та бойовий досвід'
+      />
 
        <div className='cards-grid'>
         {posts.map((post, index) => (

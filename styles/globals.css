@@ -334,19 +334,36 @@ h4, h5, h6 {
   padding: 0 10px;
 }
 
-.page-header {
+.page-header-wrapper {
+  margin-top: 1.6rem;
+  padding-bottom: .75rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.page-header-wrapper .page-header {
   display: flex;
   align-items: center;
   font-family: var(--header-font);
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 1.1;
-  margin: 2rem 0 1rem 0;
-  color: var(--dark-black);
+  line-height: 1;
+   color: var(--dark-black);
+  
 }
 
-.page-header .back-btn {
-  margin-right: 1rem;
+.page-header-wrapper .page-desc {
+  font-size: .9rem;
+  margin-top: .5rem;
+  margin-bottom: 0;
+  line-height: 1;
+  color: var(--light-grey);
+}
+
+.page-header-wrapper .back-btn {
+  margin: auto 1rem;
+  max-width: 4rem;
   cursor: pointer;
   min-width: 3rem;
 }
@@ -535,6 +552,7 @@ h4, h5, h6 {
 }
 
 .post-card .post-title {
+  line-height: 1.2;
   margin: .5rem 0;
   font-size: 1.2rem;
   font-family: 'Merriweather', serif;
@@ -544,7 +562,7 @@ h4, h5, h6 {
 
 .post-card .post-excerpt {
   font-size: 1rem;
-  margin: 1rem 0;
+  margin: .5rem 0 .75rem 0;
   line-height: 1.1;
   color: var(--nav-bg);
 }
@@ -658,6 +676,7 @@ ol {
 
 .sub-cat-card {
   display: flex;
+  flex-direction: column;
   background-color: var(--light-grey-blue);
   padding: 1.4rem;
   border-radius: 8px;
@@ -666,14 +685,21 @@ ol {
   min-width: 280px;
 }
 
-.sub-cat-card .card-icon {
-  min-width: 18%;
-  position: relative;
-  margin: 0 1rem 0 0;
+.sub-cat-card .card-header {
+  display: flex;
+  align-items: center;
 }
 
-.sub-cat-card .card-title {
-  font-size: 1.4rem;
+.sub-cat-card .card-header .card-icon {
+  min-width: 32px;
+  width: 3rem;
+   
+}
+
+.sub-cat-card .card-header .card-title {
+  font-size: 1.3rem;
+  line-height: 1;
+  margin: 0 0 0 .75rem;
 }
 
 .sub-cat-card .card-desc {
@@ -736,6 +762,12 @@ ol {
   cursor: pointer;
   border-radius: 3px;
   font-family: 'Raleway', sans-serif;
+  transition: all .25s;
+}
+
+.help-contact-btn:hover {
+  background-color: #d8dee7;
+  transition: all .25s;
 }
 
 .help-contact-btn span {
@@ -754,25 +786,33 @@ ol {
 
 .book-card {
   display: flex;
-  padding: 1.5rem .8rem;
+  flex-direction: column;
+  padding: 1.4rem;
   background-color: var(--white-grey);
   color: var(--dark-black);
   box-shadow: var(--card-shadow);
   border-radius: 8px;
 }
 
-.book-card .card-icon {
-  margin: 1rem 1rem 1rem 0;
+.book-card .book-header {
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.book-card .book-header .card-icon {
+  
   min-width: 3rem;
 }
 
-.book-meta .book-title {
+.book-card .book-header .book-title {
   font-family: 'Merriweather', serif;
+  margin-left: .75rem;
 }
 
 .book-meta p {
   margin: .5rem 0;
-  line-height: 1;
+  line-height: 1.05;
 }
 
 .book-meta .book-desc {
@@ -785,6 +825,11 @@ ol {
   color: var(--grey);
   font-size: .8rem;
   
+}
+
+.book-meta .doc-type .file-size {
+  margin-left: 1rem;
+  font-size: .9rem;
 }
 
 .book-meta .book-date {
