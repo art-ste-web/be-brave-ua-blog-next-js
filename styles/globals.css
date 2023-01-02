@@ -363,6 +363,7 @@ h4, h5, h6 {
 
 .page-header-wrapper .back-btn {
   margin: auto 1rem;
+  margin-left: .5rem;
   max-width: 4rem;
   cursor: pointer;
   min-width: 3rem;

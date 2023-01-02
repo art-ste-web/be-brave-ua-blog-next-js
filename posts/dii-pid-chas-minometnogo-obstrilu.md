@@ -2,7 +2,7 @@
 title: 'Дії під час мінометного обстрілу'
 excerpt: 'Поради як діяти під час мінометного обстрілу'
 description : ""
-date: '2022-12-07'
+date: '2022-06-07'
 cover_image: '/images/posts/mine.jpg'
 tags: [артобстріл, корисні_навички]
 slug : "dii-pid-chas-minometnogo-obstrilu"

@@ -2,7 +2,7 @@
 title: '10 порад щодо використання Starlink'
 excerpt: 'Практичні поради, засновані на наявному досвіді користування терміналами Starlink'
 description : ""
-date: '2022-10-18'
+date: '2022-07-18'
 cover_image: '/images/posts/starlink-antena.png'
 tags: [зв'язок, starlink]
 slug : "porady-vykorystannya-starlink"
