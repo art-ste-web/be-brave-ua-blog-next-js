@@ -1,7 +1,7 @@
 {
     "books": [
                 {   "id": "0",
-                    "category": "зброя",
+                    "category": "Зброя",
                     "link": "/books/zbroya/Nastanova-AK-74.pdf",
                     "icon": "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",
                     "title": "Настанова зі стрілецької справи AK, РПК (5,45)",
@@ -13,7 +13,7 @@
                 },
                 {
                     "id": "1",
-                    "category": "зброя",
+                    "category": "Зброя",
                     "link": "/books/zbroya/Nastanova-SVD.pdf",
                     "icon": "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",
                     "title": "Настанова зі стрілецької справи СГД",
@@ -25,7 +25,7 @@
                 },
                 {
                     "id": "2",
-                    "category": "зброя",
+                    "category": "Зброя",
                     "link": "/books/zbroya/Nastanova-RPG-7.pdf",
                     "icon": "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",
                     "title": "Настанова зі стрілецької справи РПГ-7",

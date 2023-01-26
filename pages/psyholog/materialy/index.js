@@ -3,7 +3,7 @@ import CurrentPageHeader from '../../../components/CurrentPageHeader'
 import BookCard from '../../../components/BookCard'
 import VideoCard from '../../../components/VideoCard'
 
-export default function Materialy({books}) {
+export default function Materialy() {
   const psyMatData = [
       {
         id: 0,
@@ -77,10 +77,4 @@ export default function Materialy({books}) {
     )
   }
 
-  export async function getStaticProps() {
-    const res = await fetch('http://localhost:5000/books')
-    const data = await res.json()
-    return {
-        props: {books: data}
-    }
-  }
+  
