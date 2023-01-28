@@ -1,10 +1,22 @@
 import Head from 'next/head'
 import CurrentPageHeader from '../../components/CurrentPageHeader'
-import BookCard from '../../components/BookCard'
+import SubCatCard from "../../components/SubCatCard"
 
-
-export default function Library({books}) {
-    // console.log('props >>> ', books);
+export default function Library() {
+  const libSubCatData = [
+    {
+      icon: '/images/other-icons/rifle-gun.svg',
+      title: 'Зброя та вогнева підготовка',
+      desc: 'Настанови та навчальні матеріали зі зброї та вогневої підготовки',
+      link: '/biblioteka/zbroya'
+    },
+    {
+      icon: '/images/other-icons/soldier.svg',
+      title: 'Тактична підготовка',
+      desc: 'Групова та індивідуальна тактика, розвідка, загальні рекомендації - методичні матеріали, книги та ін.',
+      link: '/biblioteka/taktyka'
+    }
+  ]
     return (
       <div>
         <Head>
@@ -22,9 +34,9 @@ export default function Library({books}) {
           />
           
           <div className='cards-grid'>
-            {books.map((book, index) => (
-              <BookCard key={index} book={book} />
-            ))}
+            {libSubCatData.map((card, index) => (
+              <SubCatCard key={index} data={card} />
+            ))}          
           </div>
           
         </div>
@@ -32,10 +44,10 @@ export default function Library({books}) {
     )
   }
 
-  export async function getStaticProps() {
-    const res = await fetch('http://localhost:5000/books')
-    const data = await res.json()
-    return {
-        props: {books: data}
-    }
-  }
+  // export async function getStaticProps() {
+  //   const res = await fetch('http://localhost:5000/books')
+  //   const data = await res.json()
+  //   return {
+  //       props: {books: data}
+  //   }
+  // }
