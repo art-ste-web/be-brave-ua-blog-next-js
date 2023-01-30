@@ -15,6 +15,12 @@ export default function Library() {
       title: 'Тактична підготовка',
       desc: 'Групова та індивідуальна тактика, розвідка, загальні рекомендації - методичні матеріали, книги та ін.',
       link: '/biblioteka/taktyka'
+    },
+    {
+      icon: '/images/other-icons/shovel.svg',
+      title: 'Інженерна підготовка',
+      desc: 'Інженерне обладнання позицій, зведення фортифікаційних споруд, вибухові пристрої та ін.',
+      link: '/biblioteka/inzhenerna-pidgotovka'
     }
   ]
     return (

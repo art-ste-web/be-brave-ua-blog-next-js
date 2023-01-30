@@ -1,32 +1,47 @@
 import Link from "next/link"
+import Image from 'next/image'
 
-export default function TagsCloud({posts}) {
+export default function TagsCloud() {
+    const tags = ["артобстріл", "зброя", "зв'язок", "корисні_навички", "starlink"]
     
-    //var tags = post.tags.concat(post.tags.filter((item) => post.tags.indexOf(item) < 0))
-
-    // console.log(tags) 
     
-      return (
-        
-       <></>
-    //     <div>{
+  return (
+    <div className="tags-cloud">
+      
            
-    //         post.frontmatter.tags.map(
-    //           tag => {
+      <span className="tags-title">
+      <Image
+          className="swipe-icon"
+          src={'/images/other-icons/swipe-left.svg'}
+          alt="post-image"
+          width={24}
+          height={24}
+      />
+        Теги:
+        
+      </span>
+      {
+        tags.map(
+          (tag, index) => {
 
-    //             //const slug = slugify(tag)
-    //             const slug = tag
-                
+            //const slug = slugify(tag)
+            const slug = tag
+            
 
-    //             return (<Link key={tag} href={`/tag/${slug}`}>
-    //               <a>
-    //                 <span>#{tag}</span>
-    //               </a>
-    //             </Link>)
-    //           }
-    //         )
-    //       }
-    // </div>
+            return (
+              <span>
+              <Link key={index} href={`/tag/${slug}`}>
+                <a className="post-tag">
+                  <span>#{tag}</span>
+                </a>
+              </Link>
+              </span>
+            )
+          }
+        )
+      }
+    </div> 
+
 
   )
 }

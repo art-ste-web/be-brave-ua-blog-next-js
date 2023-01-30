@@ -15,23 +15,24 @@ export default function Post({post}) {
 
         <div className="post-date">{post.frontmatter.date.split('-').reverse().join('.')}</div>
 
-        <div className="tags">{
-                  post.frontmatter.tags.map(
-                    (tag, index) => {
+        <div className="tags">
+                  {
+                    post.frontmatter.tags.map(
+                      (tag, index) => {
 
-                      //const slug = slugify(tag)
-                      const slug = tag
-                      
+                        //const slug = slugify(tag)
+                        const slug = tag
+                        
 
-                      return (
-                        <Link key={index} href={`/tag/${slug}`}>
-                          <a className="post-tag">
-                            <span>#{tag}</span>
-                          </a>
-                        </Link>
-                      )
-                    }
-                  )
+                        return (
+                          <Link key={index} href={`/tag/${slug}`}>
+                            <a className="post-tag">
+                              <span>#{tag}</span>
+                            </a>
+                          </Link>
+                        )
+                      }
+                    )
                 }
           </div>
         <Link href={`/blog/${post.slug}`}>

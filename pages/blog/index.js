@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import Head from 'next/head'
 import CurrentPageHeader from '../../components/CurrentPageHeader'
 import Post from '../../components/PostCard'
+import TagsCloud from '../../components/TagsCloud'
 import { sortByDate } from '../../utils'
 
 export default function Home({ posts }) {
@@ -21,6 +22,8 @@ export default function Home({ posts }) {
          backLink='/' 
          desc='Практичні поради та бойовий досвід'
       />
+
+      <TagsCloud />
 
        <div className='cards-grid'>
         {posts.map((post, index) => (
