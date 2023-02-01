@@ -21,6 +21,12 @@ export default function Library() {
       title: 'Інженерна підготовка',
       desc: 'Інженерне обладнання позицій, зведення фортифікаційних споруд, вибухові пристрої та ін.',
       link: '/biblioteka/inzhenerna-pidgotovka'
+    },
+    {
+      icon: '/images/other-icons/compass.svg',
+      title: 'Топографія та орієнтування',
+      desc: 'Матеріали з військової топографії, орієнтування на місцевості, коригування вогню та ін.',
+      link: '/biblioteka/topographiya'
     }
   ]
     return (

@@ -29,8 +29,8 @@ export default function TagsCloud() {
             
 
             return (
-              <span>
-              <Link key={index} href={`/tag/${slug}`}>
+              <span key={index}>
+              <Link href={`/tag/${slug}`}>
                 <a className="post-tag">
                   <span>#{tag}</span>
                 </a>

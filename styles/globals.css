@@ -45,8 +45,13 @@ h4, h5, h6 {
 }
 
 .temp-text {
-  min-height: 50vh;
+  min-height: 20vh;
 
+}
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 /*---------------GLOBALS------------------*/
@@ -201,7 +206,7 @@ h4, h5, h6 {
 /* Toggle menu icon */
 
 .side-menu:checked ~ nav{
-  max-height: 50%;
+  max-height: 40%;
 }
 
 .side-menu:checked ~ .hamb .hamb-line {
@@ -260,6 +265,9 @@ h4, h5, h6 {
       display: none;
   }
 
+  .swipe-icon {
+    display: none !important;
+  }
   
 }
 
@@ -713,7 +721,8 @@ ol {
 
 .sub-cat-card .card-header .card-icon {
   min-width: 32px;
-  width: 3rem;
+  width: auto;
+  height: auto;
    
 }
 
