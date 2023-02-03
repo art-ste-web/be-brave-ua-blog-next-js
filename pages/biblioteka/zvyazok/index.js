@@ -33,7 +33,7 @@ export default function LibZvyazok() {
     return (
       <div>
         <Head>
-          <title>Бібліотека: організація зв'язку</title>
+          <title>Бібліотека: організація зв&apos;язку</title>
           <meta name="description" content="Матеріали з організації військового зв'язку" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
