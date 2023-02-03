@@ -42,6 +42,10 @@ export default function Home({ posts }) {
         <title>Базові знання з військової підготовки та досвід бійців</title>
         <meta name="description" content="Навчальні матеріали з базової військової підготовки, офіційні настанови зі стрілецької та іншої зброї, матеріали з тактичної медицини та психології. Досвід бійців у статтях блогу." />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:url" content="https://be-brave-ua.tk/" />
+        <meta property="og:title" content="Збірник інформації з основ військової справи" />
+        <meta property="og:description" content="Настанови, статті та відео по різним видам зброї, вогнева підготовка, тактика, медицина, топографія, інженерна підготовка та ін." />
+        <meta property="og:image" content="https://be-brave-ua.tk/images/tr.jpg" />
       </Head>
 
       <div className='cards-grid'>
