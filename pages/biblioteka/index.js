@@ -27,6 +27,12 @@ export default function Library() {
       title: 'Топографія та орієнтування',
       desc: 'Матеріали з військової топографії, орієнтування на місцевості, коригування вогню та ін.',
       link: '/biblioteka/topographiya'
+    },
+    {
+      icon: '/images/other-icons/tryzub.svg',
+      title: 'Офіційні документи',
+      desc: 'Офіційні керівні документи - статути ЗСУ, закони та ін.',
+      link: '/biblioteka/documenty'
     }
   ]
     return (

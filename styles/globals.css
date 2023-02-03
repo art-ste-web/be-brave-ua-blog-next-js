@@ -25,6 +25,8 @@ a{
   text-decoration: none;
 }
 
+
+
 ul{
   list-style: none;
 }
@@ -714,15 +716,21 @@ ol {
   min-width: 280px;
 }
 
+
+.sub-cat-card a,
+.sub-cat-card a:visited{
+  color: var(--dark-black);
+}
+
 .sub-cat-card .card-header {
   display: flex;
   align-items: center;
 }
 
-.sub-cat-card .card-header .card-icon {
-  min-width: 32px;
+.sub-cat-card .card-header .card-icon img {
+ 
   width: auto;
-  height: auto;
+  
    
 }
 

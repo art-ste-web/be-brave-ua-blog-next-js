@@ -7,18 +7,22 @@ export default function SubCatCard(props) {
         <div className="card-header">
             <div className="card-icon">
                 <Link href={props.data.link}>
-                    <Image
-                            src={props.data.icon}
-                            alt="card-icon"
-                            width={48}
-                            height={48}
-                            
-                    />
+                    <a>
+                        <Image
+                                src={props.data.icon}
+                                alt="card-icon"
+                                width={48}
+                                height={48}
+                                
+                        />
+                    </a>
                 </Link>
                         
             </div>
             <Link href={props.data.link}>
+                <a>
                     <h2 className="card-title">{props.data.title}</h2>
+                </a>
             </Link>
         </div>
                 
@@ -28,7 +32,9 @@ export default function SubCatCard(props) {
                     <p className="card-desc">{props.data.desc}</p>
                     
                     <Link href={props.data.link}>
-                        <button className="card-link-btn">Перейти</button>
+                        <a>
+                            <button className="card-link-btn">Перейти</button>
+                        </a>
                     </Link>
                 </div>                        
             </div>
