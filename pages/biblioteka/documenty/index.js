@@ -65,17 +65,17 @@ export default function LibDocs() {
     return (
       <div>
         <Head>
-          <title>Бібліотека: топографія та орієнтування на місцевості</title>
-          <meta name="description" content="Матеріали з військової топографії, орієнтування на місцевості, коригування вогню - посібники, методичні матеріали та ін." />
+          <title>Бібліотека: офіційні документи</title>
+          <meta name="description" content="Офіційні керівні документи - статути ЗСУ, закони та ін." />
           <link rel="icon" href="/favicon.ico" />
         </Head>
   
         <div className='container'>
 
         <CurrentPageHeader 
-          text='Топографія та орієнтування на місцевості' 
+          text='Офіційні документи' 
           backLink='/biblioteka' 
-          desc="Матеріали з військової топографії, орієнтування на місцевості, коригування вогню - посібники, методичні матеріали та ін."
+          desc="Офіційні керівні документи - статути ЗСУ, закони та ін."
         />
           
           <div className='cards-grid'>

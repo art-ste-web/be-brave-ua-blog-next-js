@@ -7,7 +7,7 @@ export default function Library() {
     {
       icon: '/images/other-icons/rifle-gun.svg',
       title: 'Зброя та вогнева підготовка',
-      desc: 'Настанови та навчальні матеріали зі зброї та вогневої підготовки',
+      desc: 'Настанови та навчальні матеріали зі зброї та вогневої підготовки. Довідники з озброення та техніки.',
       link: '/biblioteka/zbroya'
     },
     {
@@ -27,6 +27,12 @@ export default function Library() {
       title: 'Топографія та орієнтування',
       desc: 'Матеріали з військової топографії, орієнтування на місцевості, коригування вогню та ін.',
       link: '/biblioteka/topographiya'
+    },
+    {
+      icon: '/images/other-icons/walkie-talkie.svg',
+      title: "Зв'язок",
+      desc: "Загальні відомості, організація зв'язку та ін.",
+      link: '/biblioteka/zvyazok'
     },
     {
       icon: '/images/other-icons/tryzub.svg',
