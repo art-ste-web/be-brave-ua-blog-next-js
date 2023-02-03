@@ -22,7 +22,7 @@ export default function LibZvyazok() {
         link: "/books/zvyazok/Recom-nalashtuvannya-motorola.pdf",
         icon: "/images/other-icons/metod.svg",
         title: "Рекомендації Держспецзв'язку з програмування та налаштування радіостанцій Motorola",
-        description: "Рекомендації з програмування, конфігурування параметрів безпеки та функцій захисту інформації в радіостанціях цифрової системи радіозв'язку Motorola Solutions MOTOTRBO™ стандарту DMR",
+        description: "Рекомендації з програмування, конфігурування параметрів безпеки та функцій захисту інформації в радіостанціях цифрової системи радіозв'язку Motorola Solutions MOTOTRBO стандарту DMR",
         fileType: "Тип: PDF файл",
         size: "~1.8 Mb",
         date: "Рік: 2022",
