@@ -6,6 +6,7 @@ import { marked } from 'marked'
 import Link from 'next/link'
 import Image from 'next/image'
 import ItemPost from '../../components/ItemPost'
+import TagsCloud from '../../components/TagsCloud'
 
 import AllPostsBtn from '../../components/AllPostsBtn'
 // import { NextSeo } from 'next-seo';
@@ -47,7 +48,7 @@ export default function tag({ posts }) {
             </Head>
 
             <AllPostsBtn />
-
+            <TagsCloud />
             <div className='cards-grid'>
 
             {posts.map((post, index) => (
