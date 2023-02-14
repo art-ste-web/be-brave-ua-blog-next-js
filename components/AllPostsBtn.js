@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function AllPostsBtn() {
   return (
-    <div>
+    <div className="all-posts-btn">
           <Link href='/blog'>
               <a className='btn-back'>
                 <Image

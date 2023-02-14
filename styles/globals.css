@@ -374,6 +374,9 @@ h4, h5, h6 {
   
   padding: 0 10px;
 }
+#dark .container {
+  color: var(--light-grey-blue);
+}
 
 .page-header-wrapper {
   margin-top: .25rem;
@@ -381,6 +384,7 @@ h4, h5, h6 {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #eaeaea;
+  margin-bottom: 1rem;
 }
 #dark .page-header-wrapper {
   border-bottom: 1px solid #c9c9c962;
@@ -622,7 +626,8 @@ h4, h5, h6 {
 .tags-cloud {
   display: flex;
   overflow-x: scroll;
-  padding: 1.1rem .5rem;
+  padding: 1rem .5rem;
+  margin-bottom: 1rem;
   border-bottom: 1px solid #eaeaea;
   scrollbar-width: 3px;
 }
@@ -708,6 +713,14 @@ h4, h5, h6 {
 
 /*back to blog btn*/
 
+#dark .all-posts-btn .btn-back {
+  background-color: var(--dark-blue);
+}
+
+#dark .all-posts-btn .btn-back span {
+  color: var(--grey);
+}
+
 .btn-back {
   display: flex;
   align-items: center;
@@ -769,6 +782,10 @@ h4, h5, h6 {
 .single-post .post-body {
   padding: .25rem;
 }
+#dark .single-post .post-body {
+  color: var(--grey-text);
+}
+
 
 .single-post .post-body h4 {
   font-family: 'Raleway', sans-serif;
@@ -785,8 +802,17 @@ h4, h5, h6 {
 .single-post .post-body ul,
 ol {
   padding-left: 1rem;
-  line-height: 2.3;
+  line-height: 1.3;
   margin: .5rem 0;
+}
+
+.single-post .post-body ul li,
+.single-post .post-body ol li {
+  margin-bottom: .5rem;
+}
+
+#dark .single-post .post-body ul li::marker {
+  color: var(--grey);
 }
 
 .single-post .post-body pre {
@@ -794,6 +820,11 @@ ol {
   padding: 20px;
   margin: 20px 0;
   line-height: 2.3;
+}
+
+.post-body a {
+  color: var(--light-grey);
+    border-bottom: 2px solid var(--yellow);
 }
 
 /*---------------PSYHOLOGY PAGE----------------*/
@@ -808,12 +839,19 @@ ol {
   margin: 0;
   min-width: 280px;
 }
-
+#dark .sub-cat-card {
+  background-color: var(--post-card-dark-bg);
+}
 
 .sub-cat-card a,
-.sub-cat-card a:visited{
+.sub-cat-card a:visited {
   color: var(--dark-black);
 }
+#dark .sub-cat-card a,
+#dark .sub-cat-card a:visited {
+  color: var(--light-grey-blue);
+}
+
 
 .sub-cat-card .card-header {
   display: flex;
@@ -837,6 +875,9 @@ ol {
   line-height: 1.2;
   margin: .5rem 0;
 }
+#dark .sub-cat-card .card-desc {
+  color: var(--light-grey);
+}
 
 .sub-cat-card .card-link-btn {
   margin-top: .8rem;
@@ -852,6 +893,10 @@ ol {
   font-family: 'Raleway', sans-serif;
   transition: all .25s;
   filter: drop-shadow(4px 4px 16px rgba(0, 0, 0, 0.1));
+}
+#dark .sub-cat-card .card-link-btn {
+  background-color: var(--light-blue);
+  color: var(--white);
 }
 
 /*---------------PSYHOLOGY HELP PAGE----------------*/
@@ -895,6 +940,10 @@ ol {
   font-family: 'Raleway', sans-serif;
   transition: all .25s;
 }
+#dark .help-contact-btn {
+  background-color: var(--light-blue);
+  color: var(--light-grey-blue);
+}
 
 .help-contact-btn:hover {
   background-color: #d8dee7;
@@ -924,12 +973,19 @@ ol {
   box-shadow: var(--card-shadow);
   border-radius: 8px;
 }
+#dark .book-card {
+  background-color: var(--post-card-dark-bg);
+}
 
 .book-card .book-header {
   display: flex;
   align-items: center;
   line-height: 1.2;
 }
+#dark .book-card .book-header {
+  color: var(--light-grey-blue);
+}
+
 
 .book-card .book-header .card-icon {
   
@@ -951,6 +1007,9 @@ ol {
   line-height: 1.1;
  
 }
+#dark .book-meta .book-desc {
+  color: var(--light-grey);
+}
 
 .book-meta .doc-type {
   color: var(--grey);
@@ -968,6 +1027,9 @@ ol {
   margin: 0;
   font-size: .9rem;
 }
+#dark .book-meta .book-date {
+  color: var(--light-grey)
+}
 
 .book-meta .dwld-book-btn {
   display: flex;
@@ -982,6 +1044,9 @@ ol {
   padding: .5rem;
   margin: 1rem 0 0 0;
   cursor: pointer;
+}
+#dark .book-meta .dwld-book-btn {
+  background-color: var(--light-blue);
 }
 
 .book-meta .dwld-book-btn img {

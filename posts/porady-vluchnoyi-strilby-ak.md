@@ -31,5 +31,5 @@ draft : false
 Джерело: [Сили територіальної оборони ЗСУ](https://www.facebook.com/100068672623504/posts/pfbid0jqSUgnz4bApuXEAfy9GMoxRZTDB7w4ML9B18ZbT2LVeRTfmJHSi5PuBBgv3xLnFzl/)
 
 ### Матеріали по темі:
-
+- [Вибір точки прицілювання та налаштувань для АК-74](/blog/vybir-tochky-prycilyuvannya-ak/)
 - [Настанова зі стрільби АК-74](/biblioteka/zbroya#1)

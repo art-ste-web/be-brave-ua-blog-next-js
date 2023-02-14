@@ -56,6 +56,8 @@ function MyApp({ Component, pageProps }) {
           onHandleColor={'#a5a59f'}
           offHandleColor={'#01577c'}
           handleDiameter={32}
+          boxShadow={'4px 4px 8px rgba(0, 0, 0, .2)'}
+          activeBoxShadow={'4px 4px 8px rgba(0, 0, 0, .2)'}
         />
       </div>
       
