@@ -5,7 +5,7 @@ description : ""
 date: '2022-11-16'
 cover_image: '/images/posts/zbroya/ak-aim.jpg'
 tags: [зброя, вогнева_підготовка]
-slug : "vybir-tochky-prytsilyuvannya"
+slug : "vybir-tochky-prycilyuvannya-ak"
 author : ""
 categories : ["Зброя"]
 draft : false

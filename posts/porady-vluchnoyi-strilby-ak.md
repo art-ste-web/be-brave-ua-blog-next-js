@@ -5,7 +5,7 @@ description : ""
 date: '2022-11-04'
 cover_image: '/images/posts/zbroya/ak-girl.jpg'
 post_images : []
-tags: [зброя, корисні_навички]
+tags: [зброя, вогнева_підготовка]
 slug : "porady-vluchnoyi-strilby-ak"
 author : ""
 categories : ["навички"]

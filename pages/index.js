@@ -43,8 +43,8 @@ export default function Home({ posts }) {
         <meta name="description" content="Навчальні матеріали з базової військової підготовки, офіційні настанови зі стрілецької та іншої зброї, матеріали з тактичної медицини та психології. Досвід бійців у статтях блогу." />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:url" content="https://be-brave-ua.tk/" />
-        <meta property="og:title" content="Збірник інформації з основ військової справи" />
-        <meta property="og:description" content="Настанови, статті та відео по різним видам зброї, вогнева підготовка, тактика, медицина, топографія, інженерна підготовка та ін." />
+        <meta property="og:title" content="Базові знання з військової підготовки" />
+        <meta property="og:description" content="Зброя, вогнева підготовка, тактика, медицина, топографія, інженерна підготовка та ін. Настанови, книги, статті блогу та відеоматеріали." />
         <meta property="og:image" content="https://be-brave-ua.tk/images/be-brave-cover.jpg" />
       </Head>
 
