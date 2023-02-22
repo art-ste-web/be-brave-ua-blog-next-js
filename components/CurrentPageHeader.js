@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Link from "next/link"
 import { useRouter } from 'next/router'
 
 export default function CurrentPageHeader(props) {
@@ -8,16 +7,14 @@ export default function CurrentPageHeader(props) {
     <div className="page-header-wrapper" onClick={() => router.back()}>
       
           <div className="back-btn">
-              {/* <Link href={props.backLink}> */}
-                {/* <a> */}
+              
                   <Image 
                       src='/images/other-icons/back-btn.svg'
                       alt="arrow-left-icon"
                       width={48}
                       height={48}
                   />
-                {/* </a> */}
-              {/* </Link> */}
+                
           </div>
           <div>
             <h1 className='page-header'>{props.text}</h1>
