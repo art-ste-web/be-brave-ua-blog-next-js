@@ -712,6 +712,9 @@ h4, h5, h6 {
 /*---------------SINGLE POST----------------*/
 
 /*back to blog btn*/
+.all-posts-btn {
+  cursor: pointer;
+}
 
 #dark .all-posts-btn .btn-back {
   background-color: var(--dark-blue);
