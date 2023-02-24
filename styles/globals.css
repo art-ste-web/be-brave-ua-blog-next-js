@@ -825,9 +825,47 @@ ol {
   line-height: 2.3;
 }
 
+.single-post .post-body blockquote{
+  box-sizing: border-box;
+  font-size: 1.4em;
+  width: 80%;
+  margin: 2rem auto;
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  color: #555555;
+  padding: 1rem 1.1rem 1rem 3rem;
+  border-left: 8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+.single-post .post-body blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.single-post .post-body blockquote::after{
+  content: '';
+}
+
+.single-post .post-body blockquote em{
+  display:block;
+  color:#686767;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
 .post-body a {
   color: var(--light-grey);
-    border-bottom: 2px solid var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+  word-wrap: break-word;
 }
 
 /*---------------PSYHOLOGY PAGE----------------*/
