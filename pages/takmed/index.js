@@ -60,6 +60,17 @@ export default function TakMed() {
         size: "~4.7 Mb",
         date: "Рік: 2016",
       },
+      {
+        id: 5,
+        type: "text",
+        link: "https://play.google.com/store/apps/details?id=app.TacticMedAid&hl=uk",
+        icon: "/images/other-icons/g-play.svg",
+        title: "Мобільний застосунок TacticMedAid (android)",
+        description: "Мобільний застосунок TacticMedAid має два напрямки: цивільний та військовий. Частина для військових містить пояснення алгоритмів дій на різні поширені види травм та поранень в умовах бойових дій. ",
+        fileType: "",
+        size: "",
+        date: "",
+      },
   ]
     return (
       <div>

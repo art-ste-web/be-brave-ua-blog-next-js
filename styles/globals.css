@@ -825,43 +825,56 @@ ol {
   line-height: 2.3;
 }
 
-.single-post .post-body blockquote{
+.single-post .post-body hr {
+  background-color: #ccc;
+  height: 1px;
+  border: none;
+}
+
+.single-post .post-body blockquote {
   box-sizing: border-box;
   font-size: 1.4em;
   width: 80%;
   margin: 2rem auto;
   font-family: 'Arial', sans-serif;
   font-style: italic;
+  font-weight: 700;
   color: #555555;
   padding: 1rem 1.1rem 1rem 3rem;
   border-left: 8px solid #78C0A8 ;
-  line-height:1.6;
+  line-height: 1.6;
   position: relative;
   background:#EDEDED;
 }
+#dark .single-post .post-body blockquote {
+  background-color: #00405c;
+  color: #fff;
+}
 
-.single-post .post-body blockquote::before{
+.single-post .post-body blockquote::before {
   font-family:Arial;
   content: "\201C";
   color:#78C0A8;
-  font-size:4em;
+  font-size: 4rem;
   position: absolute;
-  left: 10px;
-  top:-10px;
+  left: 8px;
+  top: -8px;
 }
 
-.single-post .post-body blockquote::after{
+.single-post .post-body blockquote::after {
   content: '';
 }
 
-.single-post .post-body blockquote em{
-  display:block;
-  color:#686767;
+.single-post .post-body blockquote em {
+  display: block;
+  color: #686767;
   font-style: normal;
-  font-weight: bold;
-  margin-top:1em;
+  margin-top: 1em;
+  font-size: 1rem;
 }
-
+#dark .single-post .post-body blockquote em {
+  color: #bfc0c4;
+}
 .post-body a {
   color: var(--light-grey);
   border-bottom: 2px solid var(--yellow);
