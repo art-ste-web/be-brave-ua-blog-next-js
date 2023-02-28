@@ -302,6 +302,28 @@ h4, h5, h6 {
   
 }
 
+/*scroll to top button*/
+.scroll-top-btn {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  right: 12px;
+  bottom: 12px;
+  background-color: var(--light-grey);
+  border-radius: 48px;
+  box-shadow: var(--card-shadow);
+  cursor: pointer;
+  border: none;
+  opacity: .7;
+  z-index: 1000;
+}
+#dark .scroll-top-btn {
+
+}
+
 /*footer*/
 .footer {
   display: flex;

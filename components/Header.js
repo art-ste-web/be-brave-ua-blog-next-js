@@ -7,7 +7,7 @@ export default function Header() {
     <header className="header">
           {/* Logo */}
           <Link href='/'>
-            <a><div className='site-logo'></div></a>
+            <a><div id='logo' className='site-logo'></div></a>
           </Link>
           <Link href='/'>
             <a className="logo">

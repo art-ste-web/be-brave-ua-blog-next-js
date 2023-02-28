@@ -4,11 +4,20 @@ import matter from 'gray-matter'
 import { marked } from 'marked'
 import Link from 'next/link'
 import Image from 'next/image'
+import Head from "next/head"
 import AllPostsBtn from '../../components/AllPostsBtn'
 
-export default function PostPage({frontmatter: {title, date, cover_image, tags}, slug, content}) {
+export default function PostPage({frontmatter: {title, excerpt, date, cover_image, tags}, slug, content}) {
   return (
     <>  
+        <Head>
+          <title>{title}</title>
+          <meta name="description" content={excerpt}/>
+          {/* <meta property="og:url" content="https://be-brave-ua.tk/" /> */}
+          <meta property="og:title" content={title} />
+          <meta property="og:description" content={excerpt} />
+          <meta property="og:image" content={cover_image} />
+        </Head>
         <AllPostsBtn />
         <div className='single-post'>
             <h1 className='single-post-title'>{title}</h1>

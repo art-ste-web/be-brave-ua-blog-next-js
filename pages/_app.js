@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import ScrollTopBtn from '../components/ScrollTopBtn'
 import { createContext, useState } from 'react'
 import ReactSwitch from 'react-switch'
 
@@ -64,6 +65,7 @@ function MyApp({ Component, pageProps }) {
       <main className='container'>
         <Component {...pageProps} />
       </main>
+      <ScrollTopBtn />
       <Footer />
     </div>
     </ThemeContext.Provider>
