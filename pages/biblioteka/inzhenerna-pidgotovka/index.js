@@ -83,7 +83,7 @@ export default function LibEngineer() {
         date: "Рік: 2021",
       },
       {
-        id: 6,
+        id: 7,
         type: "text",
         link: "/books/inzhenerna/Razvitie-i-oborudovanie-okopov-1939.pdf",
         icon: "/images/other-icons/book-closed.svg",
