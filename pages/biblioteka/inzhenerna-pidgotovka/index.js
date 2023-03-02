@@ -82,7 +82,17 @@ export default function LibEngineer() {
         size: "~3.8 Mb",
         date: "Рік: 2021",
       },
-      
+      {
+        id: 6,
+        type: "text",
+        link: "/books/inzhenerna/Razvitie-i-oborudovanie-okopov-1939.pdf",
+        icon: "/images/other-icons/book-closed.svg",
+        title: "Розвиток і обладнання окопів (рос.)",
+        description: "Книга 1939 року описує послідовність розвитку окопів. Є ілюстрації з розмірами.",
+        fileType: "Тип: PDF файл",
+        size: "~15 Mb",
+        date: "Рік: 1939",
+      },
   ]
     return (
       <div>

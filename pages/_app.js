@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import ScrollTopBtn from '../components/ScrollTopBtn'
+import { useEffect } from 'react'
 import { createContext, useState } from 'react'
 import ReactSwitch from 'react-switch'
 
@@ -14,6 +15,20 @@ function MyApp({ Component, pageProps }) {
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"))
   }
+
+  /*!!!!!!!(need optimization) show-hide to top btn */
+  const [offset, setOffset] = useState(0);
+
+    useEffect(() => {
+        const toTopBtn = document.querySelector('.scroll-top-btn')
+        offset >= 960 ? toTopBtn.style.opacity=.7 : toTopBtn.style.opacity=0
+        const onScroll = () => setOffset(window.pageYOffset);
+        // clean up code
+        window.removeEventListener('scroll', onScroll);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    });
+    // console.log(offset); 
 
   return (
     <ThemeContext.Provider value={{theme, toggleTheme}}>

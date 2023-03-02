@@ -317,12 +317,13 @@ h4, h5, h6 {
   box-shadow: var(--card-shadow);
   cursor: pointer;
   border: none;
-  opacity: .7;
+  opacity: 0;
   z-index: 1000;
+  transition: opacity .2s ease-in;
 }
-#dark .scroll-top-btn {
+/* #dark .scroll-top-btn {
 
-}
+} */
 
 /*footer*/
 .footer {
@@ -733,9 +734,32 @@ h4, h5, h6 {
 
 /*---------------SINGLE POST----------------*/
 
+
 /*back to blog btn*/
+.post-back-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+.post-back-nav .post-back-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 1rem;
+  cursor: pointer;
+  
+}
+
+#dark .post-back-nav .post-back-btn img {
+  filter: invert(80%);
+  opacity: .8;
+}
+
 .all-posts-btn {
   cursor: pointer;
+  flex-grow: 1;
 }
 
 #dark .all-posts-btn .btn-back {
