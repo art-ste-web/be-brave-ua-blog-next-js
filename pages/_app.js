@@ -4,6 +4,7 @@ import ScrollTopBtn from '../components/ScrollTopBtn'
 import { useEffect } from 'react'
 import { createContext, useState } from 'react'
 import ReactSwitch from 'react-switch'
+import Script from 'next/script'
 
 import '../styles/globals.css'
 
@@ -31,6 +32,22 @@ function MyApp({ Component, pageProps }) {
     // console.log(offset); 
 
   return (
+    <>
+    {/* google analytics */}
+    <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-YM75R3M9KY"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-YM75R3M9KY');
+        `}
+      </Script>
+
     <ThemeContext.Provider value={{theme, toggleTheme}}>
     <div id={theme}>
       <Header />
@@ -84,6 +101,7 @@ function MyApp({ Component, pageProps }) {
       <Footer />
     </div>
     </ThemeContext.Provider>
+    </>
   )
 }
 
