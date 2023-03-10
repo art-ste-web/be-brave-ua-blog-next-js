@@ -8,6 +8,17 @@ export default function TakMed() {
       {
         id: 0,
         type: "text",
+        link: "/books/takmed/TCCC-Course-Ukrainian-Translation.pdf",
+        icon: "/images/other-icons/metod.svg",
+        title: "Курс тактичної бойової допомоги постраждалим (КТБДП базовий)",
+        description: "Цей тренінг заснований на досвіді двох десятиліть ведення воєнних дій і містить в собі найсучасніші практики надання первинної допомоги на полі бою. Рівень курсу: Для всіх військовослужбовців (базовий). Рекомендовано Міністерством оборони США.",
+        fileType: "Тип: PDF файл",
+        size: "~7.5 Mb",
+        date: "Рік: 2019",
+      },
+      {
+        id: 1,
+        type: "text",
         link: "/books/takmed/Pidruchnyk-tccc-usa-ua.pdf",
         icon: "/images/other-icons/book-closed.svg",
         title: "Підручник тактичної бойової допомоги потерпілим",
@@ -17,7 +28,7 @@ export default function TakMed() {
         date: "Рік: 2022",
       },
       {
-        id: 1,
+        id: 2,
         type: "video",
         link: "https://www.youtube.com/watch?v=ctU6gdVqxUI",
         icon: "/images/other-icons/video.svg",
@@ -28,7 +39,7 @@ export default function TakMed() {
         date: "Рік: 2022",
       },
       {
-        id: 2,
+        id: 3,
         type: "text",
         link: "/books/takmed/Taktychna-medytsyna-metod-rek.pdf",
         icon: "/images/other-icons/book-closed.svg",
@@ -39,7 +50,7 @@ export default function TakMed() {
         date: "Рік: 2022",
       },
       {
-        id: 3,
+        id: 4,
         type: "text",
         link: "/books/takmed/Domedychna-dopomoga-v-umovah-boyovyh-diy.pdf",
         icon: "/images/other-icons/book-closed.svg",
@@ -50,7 +61,7 @@ export default function TakMed() {
         date: "Рік: 2022",
       },
       {
-        id: 4,
+        id: 5,
         type: "text",
         link: "/books/takmed/Taktychna-medytsyna-dlia-pidrozdiliv-spetsialnoho-pryznachennia.pdf",
         icon: "/images/other-icons/book-closed.svg",
@@ -61,7 +72,7 @@ export default function TakMed() {
         date: "Рік: 2016",
       },
       {
-        id: 5,
+        id: 6,
         type: "text",
         link: "https://play.google.com/store/apps/details?id=app.TacticMedAid&hl=uk",
         icon: "/images/other-icons/g-play.svg",
@@ -71,6 +82,7 @@ export default function TakMed() {
         size: "",
         date: "",
       },
+      
   ]
     return (
       <div>

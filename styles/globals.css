@@ -299,6 +299,14 @@ h4, h5, h6 {
   .swipe-icon {
     display: none !important;
   }
+
+  .tags-cloud {
+    flex-wrap: wrap;
+  }
+
+  .tags-cloud .tags-title {
+    margin-bottom: .5rem;
+  }
   
 }
 
