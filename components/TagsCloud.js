@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from 'next/image'
 
 export default function TagsCloud() {
-    const tags = ["артобстріл", "вогнева_підготовка", "зброя", "зв'язок", "корисні_навички", "тактика", "starlink"]
+    const tags = ["артобстріл", "вогнева_підготовка", "зброя", "зв'язок", "корисні_навички", "розвідка", "тактика", "starlink"]
     
     
   return (
