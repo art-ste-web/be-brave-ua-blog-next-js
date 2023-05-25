@@ -869,17 +869,28 @@ ol {
   padding-left: 1rem;
   line-height: 1.3;
   margin: .5rem 0;
-  list-style-type: circle;
+  /* list-style-type: circle; */
+  list-style: square;
 }
 
 .single-post .post-body ul li,
 .single-post .post-body ol li {
   margin-bottom: .5rem;
+  font-size: 1.1rem;
+  
+}
+
+.single-post .post-body ul li::marker {
+  
+  color: var(--light-blue);
 }
 
 #dark .single-post .post-body ul li::marker {
-  color: var(--grey);
+  
+  color: var(--header-text);
 }
+
+
 
 .single-post .post-body pre {
   background: #f4f4f4;
