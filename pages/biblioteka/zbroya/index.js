@@ -63,6 +63,17 @@ export default function LibZbroya() {
       {
         id: 5,
         type: "text",
+        link: "/books/zbroya/Naboyi-dlya-strileczkoyi-zbroyi.pdf",
+        icon: "/images/other-icons/book-closed.svg",
+        title: "Довідник з набоїв для стрілецької зброї",
+        description: "Довідник містить опис та ТТХ набоїв вітчизняного виробництва та виробництва країн НАТО",
+        fileType: "Тип: PDF файл",
+        size: "~5 Mb",
+        date: "Рік: 2023",
+      },
+      {
+        id: 6,
+        type: "text",
         link: "/books/zbroya/Nastanova-granaty.pdf",
         icon: "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",
         title: "Настанова ручні гранати",
@@ -72,7 +83,7 @@ export default function LibZbroya() {
         date: "Рік: 2005",
       },
       {
-        id: 6,
+        id: 7,
         type: "text",
         link: "/books/zbroya/Nastanova-RPG-7.pdf",
         icon: "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",
@@ -83,7 +94,7 @@ export default function LibZbroya() {
         date: "Рік: 2004",
       },
       {
-        id: 7,
+        id: 8,
         type: "text",
         link: "/books/zbroya/Posibnyk-inozemne-striletske-ozbroiennia.pdf",
         icon: "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",
@@ -94,7 +105,7 @@ export default function LibZbroya() {
         date: "Рік: 2022",
       },
       {
-        id: 8,
+        id: 9,
         type: "text",
         link: "/books/zbroya/Posibnyk-inozemne-protytankove-ozbroiennia.pdf",
         icon: "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",
@@ -105,7 +116,7 @@ export default function LibZbroya() {
         date: "Рік: 2022",
       },
       {
-        id: 9,
+        id: 10,
         type: "text",
         link: "/books/zbroya/Posibnyk-inozemni-PZRK.pdf",
         icon: "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",
@@ -116,7 +127,7 @@ export default function LibZbroya() {
         date: "Рік: 2022",
       },
       {
-        id: 10,
+        id: 11,
         type: "text",
         link: "/books/zbroya/Nastanova-PM.pdf",
         icon: "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",
@@ -127,7 +138,7 @@ export default function LibZbroya() {
         date: "Рік: 2004",
       },
       {
-        id: 11,
+        id: 12,
         type: "text",
         link: "/books/zbroya/Posibnyk-vohneva-pidhotovka-mvs.pdf",
         icon: "/images/other-icons/book-closed.svg",
@@ -138,7 +149,7 @@ export default function LibZbroya() {
         date: "Рік: 2017",
       },
       {
-        id: 12,
+        id: 13,
         type: "text",
         link: "/books/zbroya/Dovidnyk-ozbroiennia-ZSU.pdf",
         icon: "/images/other-icons/Emblem_of_the_Ukrainian_Armed_Forces.svg",
@@ -149,7 +160,7 @@ export default function LibZbroya() {
         date: "Рік: 2021",
       },
       {
-        id: 13,
+        id: 14,
         type: "text",
         link: "/books/zbroya/Dovidnyk-ozbroiennia-ru-army.pdf",
         icon: "/images/other-icons/book-closed.svg",
