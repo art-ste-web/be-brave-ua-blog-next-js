@@ -15,7 +15,7 @@ export default function AllPostsBtn() {
         />
       </span>
       <div className="all-posts-btn">
-            <Link href={'/blog'}>
+            <Link href={'/blog'} legacyBehavior>
                 <span className='btn-back'>
                   <Image
                       src='/images/other-icons/menu-tiles.svg'
@@ -28,5 +28,5 @@ export default function AllPostsBtn() {
             </Link>
       </div>
     </div>
-  )
+  );
 }

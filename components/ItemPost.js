@@ -15,56 +15,55 @@ export default function ItemPost({ post: {post} }) {
 
     //     <p>{post.excerpt}</p>
 
-        
+
 
     //     <Link href={`/blog/${post.slug}`}>
     //         <a className="btn">Читати</a>
     //     </Link>
     // </div>
 
-  <div className="post-card">
-  <Image
-    src={post.cover_image}
-    alt="post-image"
-    width={500}
-    height={300}
-  />
+    <div className="post-card">
+    <Image
+      src={post.cover_image}
+      alt="post-image"
+      width={500}
+      height={300}
+    />
 
-  <div className="post-date">{post.date.split('-').reverse().join('.')}</div>
+    <div className="post-date">{post.date.split('-').reverse().join('.')}</div>
 
-  <div className="tags">{
-                  post.tags.map(
-                    (tag, index) => {
+    <div className="tags">{
+                    post.tags.map(
+                      (tag, index) => {
 
-                      //const slug = slugify(tag)
-                      const slug = tag
-                      
+                        //const slug = slugify(tag)
+                        const slug = tag
+                        
 
-                      return (
-                        <Link key={index} href={`/tag/${slug}`}>
-                          <a className="post-tag">
+                        return (
+                          (<Link key={index} href={`/tag/${slug}`} className="post-tag">
+
                             <span>#{tag}</span>
-                          </a>
-                        </Link>
-                      )
-                    }
-                  )
-                }
-          </div>
+
+                          </Link>)
+                        );
+                      }
+                    )
+                  }
+            </div>
 
 
-  <Link href={`/blog/${post.slug}`}>
-    <h2 className="post-title">{post.title}</h2>
-  </Link>
-  <Link href={`/blog/${post.slug}`}>
-    <p className="post-excerpt">{post.excerpt}</p>
-  </Link>
+    <Link href={`/blog/${post.slug}`} legacyBehavior>
+      <h2 className="post-title">{post.title}</h2>
+    </Link>
+    <Link href={`/blog/${post.slug}`} legacyBehavior>
+      <p className="post-excerpt">{post.excerpt}</p>
+    </Link>
 
 
-  <Link href={`/blog/${post.slug}`}>
-      <a className="card-btn">Читати</a>
-  </Link>
-  </div>
-
-  )
+    <Link href={`/blog/${post.slug}`} className="card-btn">
+        Читати
+    </Link>
+    </div>
+  );
 }

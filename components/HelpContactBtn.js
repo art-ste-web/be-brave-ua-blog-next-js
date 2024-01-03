@@ -26,16 +26,16 @@ export default function HelpContactBtn(props) {
         }
       }
   return (
-    <Link href={props.link}>
-        <a>
-            <button className="help-contact-btn">
-                <span>
-                {btnIcon()}
-                </span>
-                {props.label}
-            
-            </button>
-        </a>
-    </Link>
-  )
+      (<Link href={props.link}>
+
+          <button className="help-contact-btn">
+              <span>
+              {btnIcon()}
+              </span>
+              {props.label}
+          
+          </button>
+
+      </Link>)
+  );
 }

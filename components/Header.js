@@ -7,19 +7,19 @@ export default function Header() {
     <header className="header">
           {/* Logo */}
           <Link href='/'>
-            <a><div id='logo' className='site-logo'></div></a>
+            <div id='logo' className='site-logo'></div>
           </Link>
-          <Link href='/'>
-            <a className="logo">
-              <h2 className='logo-text'>Be Brave UA <span className='flag'>
-                <Image
-                  src='/images/ukraine.png'
-                  alt="Picture of the author"
-                  width={20}
-                  height={20}
-                />
-              </span></h2>
-            </a>
+          <Link href='/' className="logo">
+
+            <h2 className='logo-text'>Be Brave UA <span className='flag'>
+              <Image
+                src='/images/ukraine.png'
+                alt="Picture of the author"
+                width={20}
+                height={20}
+              />
+            </span></h2>
+
           </Link>
 
           {/* Hamburger icon */}
@@ -37,5 +37,5 @@ export default function Header() {
               </ul>
           </nav>
       </header>
-  )
+  );
 }

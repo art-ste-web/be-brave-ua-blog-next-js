@@ -8,56 +8,56 @@ import Head from "next/head"
 import AllPostsBtn from '../../components/AllPostsBtn'
 
 export default function PostPage({frontmatter: {title, excerpt, date, cover_image, tags}, slug, content}) {
-  return (
-    <>  
-        <Head>
-          <title>{title}</title>
-          <meta name="description" content={excerpt}/>
-          {/* <meta property="og:url" content="https://be-brave-ua.tk/" /> */}
-          <meta property="og:title" content={title} />
-          <meta property="og:description" content={excerpt} />
-          <meta property="og:image" content={cover_image} />
-        </Head>
-        <AllPostsBtn />
-        <div className='single-post'>
-            <h1 className='single-post-title'>{title}</h1>
-            <div className='single-post-date'>{date.split('-').reverse().join('.')}</div>
-            <div className='tags'>{
-                  tags.map(
-                    tag => {
+  return <>  
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={excerpt}/>
+        {/* <meta property="og:url" content="https://be-brave-ua.tk/" /> */}
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={excerpt} />
+        <meta property="og:image" content={cover_image} />
+      </Head>
+      <AllPostsBtn />
+      <div className='single-post'>
+          <h1 className='single-post-title'>{title}</h1>
+          <div className='single-post-date'>{date.split('-').reverse().join('.')}</div>
+          <div className='tags'>{
+                tags.map(
+                  tag => {
 
-                      //const slug = slugify(tag)
-                      const slug = tag
+                    //const slug = slugify(tag)
+                    const slug = tag
 
-                      return (<Link key={tag} href={`/tag/${slug}`}>
-                        <a className='post-tag'>
-                          <span>#{tag}</span>
-                        </a>
-                      </Link>)
-                    }
-                  )
-                }
-            </div>
-            <div className='post-img'>
-              <Image
-                      src={cover_image}
-                      alt="post-image"
-                      width={500}
-                      height={300}
-                      layout="responsive" 
-              />
-            </div>
-            
-            <div className='post-body' dangerouslySetInnerHTML={{__html: marked(content)}}>
+                    return (
+                        (<Link key={tag} href={`/tag/${slug}`} className='post-tag'>
 
-                {/*---- md file content ---*/}
+                            <span>#{tag}</span>
 
-            </div>
+                        </Link>)
+                    );
+                  }
+                )
+              }
+          </div>
+          <div className='post-img'>
+            <Image
+                    src={cover_image}
+                    alt="post-image"
+                    width={500}
+                    height={300}
+                    layout="responsive" 
+            />
+          </div>
+          
+          <div className='post-body' dangerouslySetInnerHTML={{__html: marked(content)}}>
 
-        </div>
-        <AllPostsBtn />
-    </>
-  )
+              {/*---- md file content ---*/}
+
+          </div>
+
+      </div>
+      <AllPostsBtn />
+  </>;
 }
 
 export async function getStaticPaths() {

@@ -38,7 +38,7 @@ export default function Help() {
           <h4>Контакти:</h4>
           <div className="help-contact-link">
             <span>Сайт: </span> 
-            <Link href='https://lifelineukraine.com/'><a>https://lifelineukraine.com/</a></Link>
+            <Link href='https://lifelineukraine.com/'>https://lifelineukraine.com/</Link>
           </div>
           <HelpContactBtn 
             type='phone'
@@ -63,7 +63,7 @@ export default function Help() {
           <h4>Контакти:</h4>
           <div className="help-contact-link">
             <span>Сайт: </span> 
-            <Link href='https://vartozhyty.com.ua/oncopsychologyhelp'><a>https://vartozhyty.com.ua/</a></Link>
+            <Link href='https://vartozhyty.com.ua/oncopsychologyhelp'>https://vartozhyty.com.ua/</Link>
           </div>
           <HelpContactBtn 
             type='phone'
@@ -96,7 +96,7 @@ export default function Help() {
           <h4>Контакти:</h4>
           <div className="help-contact-link">
             <span>Сайт: </span> 
-            <Link href='https://veteranhub.com.ua/'><a>https://veteranhub.com.ua/</a></Link>
+            <Link href='https://veteranhub.com.ua/'>https://veteranhub.com.ua/</Link>
           </div>
           <HelpContactBtn 
             type='phone'
@@ -111,5 +111,5 @@ export default function Help() {
 
         </div>
       </div>
-  )
+  );
 }

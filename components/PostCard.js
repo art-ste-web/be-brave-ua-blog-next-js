@@ -25,27 +25,27 @@ export default function Post({post}) {
                         
 
                         return (
-                          <Link key={index} href={`/tag/${slug}`}>
-                            <a className="post-tag">
-                              <span>#{tag}</span>
-                            </a>
-                          </Link>
-                        )
+                          (<Link key={index} href={`/tag/${slug}`} className="post-tag">
+
+                            <span>#{tag}</span>
+
+                          </Link>)
+                        );
                       }
                     )
                 }
           </div>
-        <Link href={`/blog/${post.slug}`}>
+        <Link href={`/blog/${post.slug}`} legacyBehavior>
           <h2 className="post-title">{post.frontmatter.title}</h2>
         </Link>
-        <Link href={`/blog/${post.slug}`}>
+        <Link href={`/blog/${post.slug}`} legacyBehavior>
           <p className="post-excerpt">{post.frontmatter.excerpt}</p>
         </Link>
         
 
-        <Link href={`/blog/${post.slug}`}>
-            <a className="card-btn">Читати</a>
+        <Link href={`/blog/${post.slug}`} className="card-btn">
+            Читати
         </Link>
     </div>
-  )
+  );
 }
