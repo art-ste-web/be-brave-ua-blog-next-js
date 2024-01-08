@@ -9,8 +9,8 @@ export default function Post({post}) {
         <Image
           src={post.frontmatter.cover_image}
           alt="post-image"
-          width={500}
-          height={300}
+          width={600}
+          height={200}
         />
 
         <div className="post-date">{post.frontmatter.date.split('-').reverse().join('.')}</div>

@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import CurrentPageHeader from '../../components/CurrentPageHeader'
-import BookCard from '../../components/BookCard'
-import VideoCard from '../../components/VideoCard'
+import QuizApp from '../../components/QiuzApp'
 
 import { Tweet } from 'react-tweet'
 
@@ -23,9 +22,11 @@ export default function test() {
           desc="test"
         />
           
-          <div data-theme="dark">
+          {/* <div data-theme="dark">
             <Tweet id="1629307668568633344" />
-          </div>
+          </div> */}
+
+          <QuizApp/>
         </div>
       </div>
     )
