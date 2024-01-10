@@ -1220,6 +1220,13 @@ ol {
   cursor: pointer;
 }
 
+.quiz-container .question-card .correct-answer {
+  background-color: #14b853d8;
+}
+.quiz-container .question-card .wrong-answer {
+  background-color: #b81422d8;
+}
+
 .quiz-container .quiz-results {
   background-color: #cfd3ff;
   border-radius: 1rem;

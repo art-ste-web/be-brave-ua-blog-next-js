@@ -6,6 +6,9 @@ export default function QuizApp(props) {
     const [showQuizResults, setQuizResults] = useState(false)
     const [score, setScore] = useState(0)
     const [currentQuestion, setCurrentQuestion] = useState(0)
+    const [answerClicked, setAnswerClicked] = useState(false)
+
+    const [toggleClass, setToggleClass] = useState(false)
 
     const questions = [
         {
@@ -60,13 +63,20 @@ export default function QuizApp(props) {
     const optionClicked = (isCorrect) => {
         if(isCorrect) {
             setScore(score+1)
+            setAnswerClicked(true)
+            setToggleClass(true)
         }
+        else setAnswerClicked(true)
+      
+     
+    }
 
-        if(currentQuestion+1 < questions.length) {
-            setCurrentQuestion(currentQuestion+1)
-        }
-        else setQuizResults(true)
-        
+    const nextQuestion = () => {
+      if(currentQuestion+1 < questions.length) {
+        setCurrentQuestion(currentQuestion+1)
+        setAnswerClicked(false)
+      }
+      else setQuizResults(true)
     }
 
     const restartQuiz = () => {
@@ -99,10 +109,15 @@ export default function QuizApp(props) {
                     <ul>
                         {questions[currentQuestion].options.map((option) => {
                             return (
-                                <li onClick={() => optionClicked(option.isCorrect)} key={option.id}>{option.text}</li>
+                                <li className={toggleClass ? 'correct-answer' : ''}
+                                 onClick={() => {
+                                  answerClicked ? console.log('stop') : optionClicked(option.isCorrect)
+                                  
+                                } } key={option.id}>{option.text}</li>
                             )
                         } )}
                     </ul>
+                    <button onClick={() => nextQuestion()}>Next Question</button>
                 </div>
             )
             }
