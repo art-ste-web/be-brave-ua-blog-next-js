@@ -31,6 +31,12 @@ const categoryData = [
     cardBg: '/images/categories/lib.jpg',
     cardLink: '/biblioteka'
   },
+  {
+    cardTitle: 'Артилерія',
+    cardDesc: 'Настанови, учбові матеріали, книги',
+    cardBg: '/images/categories/arta.jpeg',
+    cardLink: '/arta'
+  },
 ]
 
 

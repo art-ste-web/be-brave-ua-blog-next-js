@@ -1207,7 +1207,7 @@ ol {
 }
 
 .quiz-container .question-card {
-  background-color: #bebebe;
+  background-color: #e4e4e4;
   border-radius: 1rem;
   padding: 1rem 2rem;
 }
@@ -1219,6 +1219,11 @@ ol {
   border-radius: .5rem;
   cursor: pointer;
 }
+
+.quiz-container .question-card li:hover {
+  background-color: #059669;
+}
+
 
 .quiz-container .question-card .correct-answer {
   background-color: #14b853d8;
@@ -1236,4 +1241,9 @@ ol {
 .quiz-container .quiz-results h2,
 .quiz-container .quiz-results h3 {
   margin-bottom: 1rem;
+}
+
+#dark .quiz-container .question-card {
+  background-color: #0e1229;
+  color: var(--grey-text);
 }
