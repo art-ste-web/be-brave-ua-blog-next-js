@@ -4,9 +4,6 @@ import matter from 'gray-matter'
 import Head from 'next/head'
 import CurrentPageHeader from '../../components/CurrentPageHeader'
 import Category from '../../components/CategoryCard'
-import Quiz from '../../components/Qiuz'
-import Post from '../../components/PostCard'
-import TagsCloud from '../../components/TagsCloud'
 import { sortByDate } from '../../utils'
 
 
@@ -21,13 +18,13 @@ const artCategoryData = [
     cardTitle: 'Настанови та література',
     cardDesc: 'Настанови та керівні документи',
     cardBg: '/images/categories/art-lit.jpg',
-    cardLink: '/arta'
+    cardLink: '/arta/art-lib'
   },
   {
     cardTitle: 'Тести',
     cardDesc: 'Тести з теорії артилерії та конструкції арт. систем',
     cardBg: '/images/categories/art-test.jpg',
-    cardLink: '/arta'
+    cardLink: '/arta/art-quiz'
   },
 ]
 
@@ -38,15 +35,15 @@ export default function Home({ posts }) {
   return (
     <div>
       <Head>
-        <title>Військовий блог. Досвід бійців та корисні поради.</title>
-        <meta name="description" content="В статтях блогу зібрані практичні поради вій бійців засновані на досвіді ведення бойових дій під час російсько-української війни." />
+        <title>Артилерія</title>
+        <meta name="description" content="ТТХ та описи арт. систем, література та керівні документи, тести" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <CurrentPageHeader
-         text='Військовий блог' 
+         text='Артилерія' 
          backLink='/' 
-         desc='Практичні поради та бойовий досвід'
+         desc='ТТХ та описи арт. систем, література та керівні документи, тести'
       />
 
       <div className='cards-grid'>
@@ -55,16 +52,7 @@ export default function Home({ posts }) {
               ))}
       </div>
 
-      <Quiz />
-
-      <TagsCloud />
-
-       <div className='cards-grid'>
-        {posts.map((post, index) => (
-          <Post key={index} post={post} />
-        ))}
-      </div>
-      
+                  
     </div>
   )
 }

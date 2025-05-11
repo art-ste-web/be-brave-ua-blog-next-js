@@ -29,7 +29,7 @@ export default function PostPage({frontmatter: {title, excerpt, date, cover_imag
                     const slug = tag
 
                     return (
-                        (<Link key={tag} href={`/tag/${slug}`} className='post-tag'>
+                        (<Link key={tag} href={`/tag-art/${slug}`} className='post-tag'>
 
                             <span>#{tag}</span>
 

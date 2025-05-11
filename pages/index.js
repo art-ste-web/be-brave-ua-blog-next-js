@@ -33,7 +33,7 @@ const categoryData = [
   },
   {
     cardTitle: 'Артилерія',
-    cardDesc: 'Настанови, учбові матеріали, книги',
+    cardDesc: 'ТТХ арт. систем, література, тести',
     cardBg: '/images/categories/arta.jpeg',
     cardLink: '/arta'
   },

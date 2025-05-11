@@ -5,10 +5,10 @@ import Head from 'next/head'
 import { marked } from 'marked'
 import Link from 'next/link'
 import Image from 'next/image'
-import ItemPost from '../../components/TagItemPost'
-import TagsCloud from '../../components/TagsCloud'
+import ItemPost from '../../components/ArtTagItemPost'
+import TagsCloud from '../../components/ArtTagsCloud'
 
-import AllPostsBtn from '../../components/AllPostsBtn'
+import AllPostsBtn from '../../components/ArtAllPostsBtn'
 // import { NextSeo } from 'next-seo';
 
 export default function tag({ posts }) {
@@ -42,8 +42,8 @@ export default function tag({ posts }) {
 
       <div>
             <Head>
-              <title>Військовий блог. Досвід бійців та корисні поради.</title>
-              <meta name="description" content="В статтях блогу зібрані практичні поради вій бійців засновані на досвіді ведення бойових дій під час російсько-української війни." />
+              <title>Інформація про арт. системи</title>
+              <meta name="description" content="ТТХ та інша інформація по арт. системах" />
               <link rel="icon" href="/favicon.ico" />
             </Head>
 
@@ -71,14 +71,14 @@ export default function tag({ posts }) {
 
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join('posts'))
+  const files = fs.readdirSync(path.join('posts-art'))
   //console.log(files);
   let tempStorage = []
 
   const temppaths = files.map((filename) => {
     //console.log(filename);
     const markdownWithMeta = fs.readFileSync(
-      path.join('posts', filename),
+      path.join('posts-art', filename),
       'utf-8'
     )
     
@@ -121,7 +121,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params: { slug } }) {
 
   // Get files from the posts dir
-  const files = fs.readdirSync(path.join('posts'))
+  const files = fs.readdirSync(path.join('posts-art'))
 
   let tempStorage = []
 
@@ -132,7 +132,7 @@ export async function getStaticProps({ params: { slug } }) {
   const tempPosts = files.map((filename) => {
 
     // Get frontmatter
-    const markdownWithMeta = fs.readFileSync(path.join('posts', filename), 'utf-8')
+    const markdownWithMeta = fs.readFileSync(path.join('posts-art', filename), 'utf-8')
     
     const { data: frontmatter } = matter(markdownWithMeta)
 

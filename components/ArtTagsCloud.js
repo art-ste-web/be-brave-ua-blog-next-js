@@ -1,8 +1,8 @@
 import Link from "next/link"
 import Image from 'next/image'
 
-export default function TagsCloud() {
-    const tags = ["ттх", "д30", "122мм",]
+export default function ArtTagsCloud() {
+    const tags = ["ттх", "д30", "122мм"]
     
     
   return (
@@ -30,7 +30,7 @@ export default function TagsCloud() {
 
             return (
               <span key={index}>
-              <Link href={`/tag/${slug}`} className="post-tag">
+              <Link href={`/tag-art/${slug}`} className="post-tag">
 
                 <span>#{tag}</span>
 

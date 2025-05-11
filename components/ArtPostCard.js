@@ -25,7 +25,7 @@ export default function Post({post}) {
                         
 
                         return (
-                          (<Link key={index} href={`/tag/${slug}`} className="post-tag">
+                          (<Link key={index} href={`/tag-art/${slug}`} className="post-tag">
 
                             <span>#{tag}</span>
 
@@ -35,7 +35,7 @@ export default function Post({post}) {
                     )
                 }
           </div>
-        <Link href={`/blog/${post.slug}`} legacyBehavior>
+        <Link href={`/arta/art-systems-info/${post.slug}`} legacyBehavior>
           <h2 className="post-title">{post.frontmatter.title}</h2>
         </Link>
         <Link href={`/arta/art-systems-info/${post.slug}`} legacyBehavior>

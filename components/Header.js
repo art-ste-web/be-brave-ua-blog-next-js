@@ -34,6 +34,7 @@ export default function Header() {
                   <li><Link href="/takmed">Тактична медицина</Link> </li>
                   <li><Link href="/psyholog">Психологічна допомога</Link></li>
                   <li><Link href="/biblioteka">Бібліотека</Link></li>
+                  <li><Link href="/arta">Артилерія</Link></li>
               </ul>
           </nav>
       </header>

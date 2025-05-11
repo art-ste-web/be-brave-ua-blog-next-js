@@ -3,7 +3,6 @@ import path from 'path'
 import matter from 'gray-matter'
 import Head from 'next/head'
 import CurrentPageHeader from '../../../components/CurrentPageHeader'
-import Quiz from '../../../components/Qiuz'
 import Post from '../../../components/ArtPostCard'
 import TagsCloud from '../../../components/ArtTagsCloud'
 import { sortByDate } from '../../../utils'
@@ -23,8 +22,6 @@ export default function Home({ posts }) {
          backLink='/arta' 
          desc='ТТХ різних видів арт. озброєння'
       />
-
-      <Quiz />
 
       <TagsCloud />
 
