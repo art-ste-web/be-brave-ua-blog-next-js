@@ -3,10 +3,35 @@ import path from 'path'
 import matter from 'gray-matter'
 import Head from 'next/head'
 import CurrentPageHeader from '../../components/CurrentPageHeader'
+import Category from '../../components/CategoryCard'
 import Quiz from '../../components/Qiuz'
 import Post from '../../components/PostCard'
 import TagsCloud from '../../components/TagsCloud'
 import { sortByDate } from '../../utils'
+
+
+const artCategoryData = [
+  {
+    cardTitle: 'ТТХ та інформація',
+    cardDesc: 'ТТХ та інформація про арт. озброєння',
+    cardBg: '/images/categories/char.jpg',
+    cardLink: '/arta/art-systems-info'
+  },
+  {
+    cardTitle: 'Настанови та література',
+    cardDesc: 'Настанови та керівні документи',
+    cardBg: '/images/categories/art-lit.jpg',
+    cardLink: '/arta'
+  },
+  {
+    cardTitle: 'Тести',
+    cardDesc: 'Тести з теорії артилерії та конструкції арт. систем',
+    cardBg: '/images/categories/art-test.jpg',
+    cardLink: '/arta'
+  },
+]
+
+
 
 export default function Home({ posts }) {
   //console.log(posts)
@@ -23,6 +48,12 @@ export default function Home({ posts }) {
          backLink='/' 
          desc='Практичні поради та бойовий досвід'
       />
+
+      <div className='cards-grid'>
+              {artCategoryData.map((category, index) => (
+                <Category key={index} category={category} />
+              ))}
+      </div>
 
       <Quiz />
 
