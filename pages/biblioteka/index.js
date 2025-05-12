@@ -8,37 +8,43 @@ export default function Library() {
       icon: '/images/other-icons/rifle-gun.svg',
       title: 'Зброя та вогнева підготовка',
       desc: 'Настанови та навчальні матеріали зі зброї та вогневої підготовки. Довідники з озброення та техніки.',
-      link: '/biblioteka/zbroya'
+      link: '/biblioteka/zbroya',
+      btnTxt: 'Перейти'
     },
     {
       icon: '/images/other-icons/soldier.svg',
       title: 'Тактична підготовка',
       desc: 'Групова та індивідуальна тактика, розвідка, загальні рекомендації - методичні матеріали, книги та ін.',
-      link: '/biblioteka/taktyka'
+      link: '/biblioteka/taktyka',
+      btnTxt: 'Перейти'
     },
     {
       icon: '/images/other-icons/shovel.svg',
       title: 'Інженерна підготовка',
       desc: 'Інженерне обладнання позицій, зведення фортифікаційних споруд, вибухові пристрої та ін.',
-      link: '/biblioteka/inzhenerna-pidgotovka'
+      link: '/biblioteka/inzhenerna-pidgotovka',
+      btnTxt: 'Перейти'
     },
     {
       icon: '/images/other-icons/compass.svg',
       title: 'Топографія та орієнтування',
       desc: 'Матеріали з військової топографії, орієнтування на місцевості, коригування вогню та ін.',
-      link: '/biblioteka/topographiya'
+      link: '/biblioteka/topographiya',
+      btnTxt: 'Перейти'
     },
     {
       icon: '/images/other-icons/walkie-talkie.svg',
       title: "Зв'язок",
       desc: "Загальні відомості, організація зв'язку та ін.",
-      link: '/biblioteka/zvyazok'
+      link: '/biblioteka/zvyazok',
+      btnTxt: 'Перейти'
     },
     {
       icon: '/images/other-icons/tryzub.svg',
       title: 'Офіційні документи',
       desc: 'Офіційні керівні документи - статути ЗСУ, закони та ін.',
-      link: '/biblioteka/documenty'
+      link: '/biblioteka/documenty',
+      btnTxt: 'Перейти'
     }
   ]
     return (

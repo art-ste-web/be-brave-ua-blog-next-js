@@ -36,20 +36,20 @@ const restartGame = () => {
       {/* 1.Header */}
         <h1 className=''>{props.quizHeader}</h1>
       {/* 2.Current score */}
-        <h2 className=''>Правильних відповідей: {score}</h2>
+        <h2 className='right-answ'>Правильних відповідей: {score}</h2>
 
       {showFinalResults ? (
         /* 4.Final results */
         <div className='quiz-results'>
           <h2>Результати тесту</h2>
           <p>{score} з {questions.length} вірно - ({(score/questions.length)*100}%)</p>
-          <button onClick={() => restartGame()} className=''>Пройти ще раз</button>
+          <button onClick={() => restartGame()} className='restart-btn'>Пройти тест ще раз</button>
         </div>
       ) : (
         /* 3.Qustion card */
         <div className='question-card'>
           <h4 className=''>Питання: {currentQuestion + 1} з {questions.length}</h4>
-          <h3 className=''>{questions[currentQuestion].text}</h3>
+          <p className='question-text'>{questions[currentQuestion].text}</p>
 
           <ul className=''>
             {questions[currentQuestion].options.map((option) =>{

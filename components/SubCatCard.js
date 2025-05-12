@@ -33,7 +33,7 @@ export default function SubCatCard(props) {
                       
                       <Link href={props.data.link}>
 
-                          <button className="card-link-btn">Перейти</button>
+                          <button className="card-link-btn">{props.data.btnTxt}</button>
 
                       </Link>
                   </div>                        

@@ -4,6 +4,7 @@ const quest = [
     options: [
       { id: 0, text: "Проти ходу годинникової стрілки", isCorrect: false },
       { id: 1, text: "За ходом годинникової стрілки", isCorrect: true },
+      { id: 2, text: "По Сонцю", isCorrect: false },
     ],
   },
   {
@@ -11,6 +12,7 @@ const quest = [
     options: [
       { id: 0, text: "Осі каналу ствола", isCorrect: false },
       { id: 1, text: "Зворотнього напрямку осі каналу ствола", isCorrect: true },
+      { id: 2, text: "Напрямку на північ", isCorrect: false },
     ],
   },
   {
@@ -18,6 +20,7 @@ const quest = [
     options: [
       { id: 0, text: "Проти ходу годинникової стрілки", isCorrect: true },
       { id: 1, text: "За ходом годинниковою стрілкою", isCorrect: false },
+      { id: 2, text: "По сонцю", isCorrect: false },
     ],
   },
   {
