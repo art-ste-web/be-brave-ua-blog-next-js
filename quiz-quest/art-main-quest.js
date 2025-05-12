@@ -6,6 +6,7 @@ const quest = [
       { id: 1, text: "За ходом годинникової стрілки", isCorrect: true },
       { id: 2, text: "По Сонцю", isCorrect: false },
     ],
+    qImg: '/images/posts/art.jpeg',
   },
   {
     text: "Кутомір відраховується від...",

@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-
+import Image from 'next/image'
 
 
 export default function Quiz(props) {
@@ -49,6 +49,14 @@ const restartGame = () => {
         /* 3.Qustion card */
         <div className='question-card'>
           <h4 className=''>Питання: {currentQuestion + 1} з {questions.length}</h4>
+          {questions[currentQuestion].qImg && <Image src={questions[currentQuestion].qImg} alt="" width={600}
+      height={400}/> }
+          {/* <Image 
+            src="/images/posts/art.jpeg" 
+            alt="" 
+            width={600}
+            height={400}
+          /> */}
           <p className='question-text'>{questions[currentQuestion].text}</p>
 
           <ul className=''>
