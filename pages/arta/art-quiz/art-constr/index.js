@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import CurrentPageHeader from '../../../../components/CurrentPageHeader'
 import Quiz from '../../../../components/QiuzApp'
-import qList from '../../../../quiz-quest/art-main-quest'
+import qList from '../../../../quiz-questions/art-constr-questions'
 
 
 export default function Home({ posts }) {

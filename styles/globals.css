@@ -1232,6 +1232,16 @@ ol {
   font-size: 1.2rem;
 }
 
+.quiz-container .question-card h4 {
+  font-weight: 400;
+ margin-bottom: .5rem;
+}
+
+.quiz-container .question-card .question-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 .quiz-container .question-card li {
   padding: 1rem;
   border: 1px solid #999999;
