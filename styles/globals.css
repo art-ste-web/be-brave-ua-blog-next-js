@@ -1250,9 +1250,11 @@ ol {
   cursor: pointer;
 }
 
-.quiz-container .question-card li:hover {
+@media (hover: hover) { 
+  .quiz-container .question-card li:hover {
   background-color: #059669;
 }
+ }
 
 
 .quiz-container .question-card .correct-answer {
