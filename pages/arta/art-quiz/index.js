@@ -6,7 +6,7 @@ export default function Library() {
   const libSubCatData = [
     {
       icon: '/images/other-icons/test.svg',
-      title: 'Тест: основні терміни в артилерії',
+      title: 'Тест: основні терміни та поняття в артилерії',
       desc: 'Основні поняття та визначення, що використовуються в артилерії',
       link: '/arta/art-quiz/art-teory',
       btnTxt: 'Пройти тест'

@@ -23,7 +23,7 @@ export default function Home({ posts }) {
 
       <Quiz 
         quest={questList}
-        quizHeader = 'Тест: основні терміни в артилерії'
+        quizHeader = 'Тест: основні терміни та поняття в артилерії'
       />
       
     </div>

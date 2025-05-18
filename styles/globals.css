@@ -1198,7 +1198,7 @@ ol {
 /*----------------QUIZ APP----------------------*/
 .quiz-container {
   border-radius: 1rem;
-  padding: 1.2rem;
+  padding: .5rem;
 }
 
 
@@ -1223,7 +1223,7 @@ ol {
 .quiz-container .quiz-results {
   background-color: var(--light-grey-blue);
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.25rem;
   margin-top: 1rem;
   
 }
@@ -1249,7 +1249,7 @@ ol {
   border-radius: .5rem;
   cursor: pointer;
 }
-
+/*remove hover on mobile devices*/
 @media (hover: hover) { 
   .quiz-container .question-card li:hover {
   background-color: #059669;
